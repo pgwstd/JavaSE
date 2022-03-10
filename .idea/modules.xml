@@ -3,9 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/java_homework.iml" filepath="$PROJECT_DIR$/.idea/java_homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_3_10/test_3_10.iml" filepath="$PROJECT_DIR$/test_3_10/test_3_10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_3_10_1/test_3_10_1.iml" filepath="$PROJECT_DIR$/test_3_10_1/test_3_10_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_3_10_2/test_3_10_2.iml" filepath="$PROJECT_DIR$/test_3_10_2/test_3_10_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_3_10_3/test_3_10_3.iml" filepath="$PROJECT_DIR$/test_3_10_3/test_3_10_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_3_6/test_3_6.iml" filepath="$PROJECT_DIR$/test_3_6/test_3_6.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_3_7/test_3_7.iml" filepath="$PROJECT_DIR$/test_3_7/test_3_7.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_3_7_2/test_3_7_2.iml" filepath="$PROJECT_DIR$/test_3_7_2/test_3_7_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_3_9/test_3_9.iml" filepath="$PROJECT_DIR$/test_3_9/test_3_9.iml" />
     </modules>
   </component>
 </project>
