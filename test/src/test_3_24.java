@@ -1,23 +1,30 @@
-import java.util.*;
+
 public class test_3_24 {
-        public int[][] rotateMatrix(int[][] mat, int n) {
-            // write code here
-            int length=mat.length;
-            for(int i=0;i<length/2;i++){
-                int temp[]=mat[i];
-                mat[i]=mat[length-i-1];
-                mat[length-i-1]=temp;
-            }
-            for(int i=0;i<length;i++){
-                for(int j=1;j<length;j++){
-                    int temp=mat[i][j];
-                    mat[i][j]=mat[j][i];
-                    mat[j][i]=temp;
+        public static int[][] change(int [][]matrix){
+            int [][]temp=new int[matrix[0].length][matrix.length];
+            int dst=matrix.length-1;
+            for(int i=0;i<matrix.length;i++,dst--){
+                for(int j=0;j<matrix[0].length;j++){
+                    temp[j][dst]=matrix[i][j];
                 }
             }
-            return mat;
+            return temp;
         }
-    }
+
+        public static void main(String[]args) {
+            int[][] matrix = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+            int[][] temp = change(matrix);
+            for (int i = 0; i < temp.length; i++) {
+                for (int j = 0; j < temp[0].length; j++) {
+                    System.out.print(temp[i][j] + "\t");
+                }
+                System.out.println();
+            }
+
+        }}
+
+
+
 
 
 
