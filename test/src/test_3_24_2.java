@@ -1,3 +1,4 @@
+//猜数游戏
 import java.util.Random;
 import java.util.Scanner;
     public class test_3_24_2 {
