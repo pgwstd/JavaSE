@@ -12,5 +12,8 @@ public class test_3_24_4 {
                         System.out.println("公鸡" + i + "只，母鸡" + j + "只，小鸡" + k + "只");
                     }
                 }
-            }}}}
+            }
+           }
+    }
+}
 
