@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class test_3_24_5 {
     public static void main(String args[]) throws IOException {
-        System.out.println("请定义数组的长度");
+        System.out.println("请定义数组的长度:");
         //输入定义长度
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        System.out.println("请输入数组");
+        System.out.println("请输入数组:");
         int[] arr = new int[n];
         int tmp=0;
         int max=0;
@@ -19,7 +19,7 @@ public class test_3_24_5 {
             arr[i] = Integer.parseInt(br.readLine());
 
         }
-        System.out.println("遍历已输入的数组");
+        System.out.println("遍历已输入的数组:");
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i]+" ");
         }
@@ -30,7 +30,7 @@ public class test_3_24_5 {
             }
 
         }
-        System.out.println("最大值是");
+        System.out.println("最大值是:");
         System.out.println(max);
     }
 }
