@@ -8,6 +8,7 @@ public class test_3_24_5 {
         int []arr=new int[n];
         for (int i=0;i<n;i++){
             sc.nextInt(arr[i]);
+
         }
 
     }
