@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class test_3_24_5 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String args[]) throws IOException {
         System.out.println("请定义数组的长度");
         //输入定义长度
         Scanner sc = new Scanner(System.in);
@@ -30,6 +30,7 @@ public class test_3_24_5 {
             }
 
         }
+        System.out.println("最大值是");
         System.out.println(max);
     }
 }
