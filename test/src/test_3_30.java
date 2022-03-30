@@ -2,6 +2,7 @@
 public class test_3_30 {
     public static void main(String[] args) {
         for (char i=1040;i<=1071;i++){
+
             System.out.printf((char)i+" ");
 
         }
