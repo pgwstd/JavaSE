@@ -4,6 +4,7 @@ public class test_3_30 {
         for (char i=1040;i<=1071;i++){
             System.out.printf((char)i+" ");
         }
+
 //        int startPosition=0,endPosition=0;
 //        char cStart='А',cEnd='Я';
 //        startPosition=(int)cStart;
