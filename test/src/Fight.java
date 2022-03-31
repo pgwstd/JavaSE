@@ -22,6 +22,10 @@ public class Fight {
             tank2.fire();
             System.out.println("tank1的炮弹数量："+tank1.getBulletAmount());
             System.out.println("tank2的炮弹数量："+tank2.getBulletAmount());
+            tank1.brake();
+            tank2.brake();
+            System.out.println("tank1刹车："+tank1.getSpeed());
+            System.out.println("tank2刹车："+tank2.getSpeed());
         }
     }
 
