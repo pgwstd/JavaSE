@@ -10,6 +10,7 @@ class triangle {
                      System.out.println("输入的边长有误，请重新输入！");
                  }
          }
+
          void 判断(int a0,int b0,int c0){
                if (a0==b0 && b0==c0){
                    String judgement = "是等边三角形";
