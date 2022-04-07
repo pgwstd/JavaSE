@@ -1,0 +1,12 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÇŽñÃ
+<	java:S131
+""Add a default case to this switch.(Œ¼’ þÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(…‹Ø
+N	java:S106"9Replace this use of System.out or System.err by a logger.(…‹Ø
+N	java:S106"9Replace this use of System.out or System.err by a logger.(…‹Ø
+N	java:S106"9Replace this use of System.out or System.err by a logger.(…‹Ø
+N	java:S106"9Replace this use of System.out or System.err by a logger.(…‹Ø
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ô‹²
+=
+java:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ

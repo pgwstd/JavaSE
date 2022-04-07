@@ -1,0 +1,22 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Çµí‘
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Îá¯ïùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¤ëùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÏŒ×³
+S	java:S106"9Replace this use of System.out or System.err by a logger.(²šÀ”úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(à‚¬¤
+N	java:S106"9Replace this use of System.out or System.err by a logger.(àš€¯
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Õ¦×şÿÿÿÿ
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(¾›œ¬øÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(…—€²üÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(¾›œ¬øÿÿÿÿ
+€
+java:S1192"eDefine a constant instead of duplicating this literal "è¿™ä¸¤ä¸ªæ•°çš„æœ€å¤§å…¬çº¦æ•°æ˜¯ï¼š" 4 times.(Õ¦×şÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‡òñ–ùÿÿÿÿ
+]
+java:S3973"GUse indentation to denote the code conditionally executed by this "if".(·¶
+O
+java:S3518"9Make sure "a" can't be zero before doing this modulation.(·¶
+T
+java:S3518"9Make sure "b" can't be zero before doing this modulation.(ç½ŠÛùÿÿÿÿ
