@@ -2,6 +2,7 @@
 // Created by 潘光伟 on 2022/4/7.
 //
 
+
 import java.util.Scanner;
 public class test_number {
     public static void main(String[] args) {
