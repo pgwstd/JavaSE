@@ -1,7 +1,7 @@
 /**
  * Created by 潘光伟 on 2022/5/5 18:59.
  */
-public class SongGame implements CompurerAverage{
+public class SongGame implements ComputerAverage{
     public double average(double x[]) {
         int count=x.length;
         double aver=0,temp=0;
