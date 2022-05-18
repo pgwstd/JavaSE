@@ -21,6 +21,7 @@ public class test_5_16_2 {
                 id=sc.next();
             }
         }
+
         String substring = id.substring(6, 14);
         String nian=id.substring(6,10);
         String yue=id.substring(10,12);
