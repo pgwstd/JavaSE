@@ -15,6 +15,7 @@ public class Test {
                 count++;
             }
         }
+        System.out.println("一共有"+count+"个"+1);
         while (count > 0) {
             System.out.print(1);
             count--;
