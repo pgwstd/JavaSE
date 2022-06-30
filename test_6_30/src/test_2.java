@@ -2,7 +2,7 @@
 import java.lang.*;  //引入java的核心类库
 import java.io.*;  //引入java的IO类库
 
-public class test2 {
+public class test_2 {
 
     public static void main(String[] args) throws IOException {
         InputStreamReader inReader = new InputStreamReader(System.in);  //创建一个输入流读取器对象
