@@ -1,7 +1,6 @@
 //用户登录swing窗口
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class user {
