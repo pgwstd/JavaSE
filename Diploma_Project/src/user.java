@@ -12,39 +12,37 @@ public class user {
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setVisible(true);
-        JPanel panel = new JPanel();
-        frame.add(panel);
-        panel.setLayout(null);
-        JLabel label1 = new JLabel("用户名");
-        label1.setBounds(10, 10, 80, 25);
-        panel.add(label1);
-        JTextField textField1 = new JTextField(20);
-        textField1.setBounds(100, 10, 160, 25);
-        panel.add(textField1);
-        JLabel label2 = new JLabel("密码");
-        label2.setBounds(10, 40, 80, 25);
-        panel.add(label2);
-        JPasswordField passwordField = new JPasswordField(20);
-        passwordField.setBounds(100, 40, 160, 25);
-        panel.add(passwordField);
-        JButton button = new JButton("登录");
-        button.setBounds(100, 80, 80, 25);
-        panel.add(button);
-        button.addActionListener(e -> {
-            String name = textField1.getText();
-            String password = new String(passwordField.getPassword());
+        frame.setLayout(new FlowLayout());
+        JLabel label1 = new JLabel("用户名：");
+        JLabel label2 = new JLabel("密码：");
+        JTextField text1 = new JTextField(10);
+        JPasswordField text2 = new JPasswordField(10);
+        JButton button1 = new JButton("登录");
+        JButton button2 = new JButton("取消");
+        frame.add(label1);
+        frame.add(text1);
+        frame.add(label2);
+        frame.add(text2);
+        frame.add(button1);
+        frame.add(button2);
+        button1.addActionListener(e -> {
+            String name = text1.getText();
+            String password = text2.getText();
             if (name.equals("") || password.equals("")) {
-                showMessageDialog(null, "用户名或密码不能为空！");
+                showMessageDialog(null, "用户名或密码不能为空");
             } else {
                 if (name.equals("admin") && password.equals("admin")) {
-                    showMessageDialog(null, "登录成功！");
+                    showMessageDialog(null, "登录成功");
                     frame.dispose();
                     new admin();
                 } else {
-                    JOption
-                    showMessageDialog(null, "用户名或密码错误！");
-
+                    showMessageDialog(null, "用户名或密码错误");
                 }
             }
-        }
-        );
+        });
+        button2.addActionListener(e -> {
+            frame.dispose();
+            new main();
+        });
+    }
+}
