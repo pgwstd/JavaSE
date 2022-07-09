@@ -12,6 +12,9 @@ public class test {
         int n = 12;
         int n2 = 5;
         double d1 =(double) n / n2;
+        int m2 = 12;
+        int n3 = -5;
+        System.out .println(m2 % n3);
         System.out .println(f1);
         System.out.println(b1);
         System.out.println(l1);
