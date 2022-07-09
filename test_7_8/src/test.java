@@ -8,7 +8,9 @@ public class test {
         System.out.println("地址：北流");
         float f1 = 12.3f;
         double b1 = 123.4;
+        long l1=1222354345345343l;
         System.out .println(f1);
         System.out.println(b1);
+        System.out.println(l1);
     }
 }
