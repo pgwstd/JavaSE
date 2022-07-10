@@ -1,5 +1,5 @@
 import java.awt.*;
-
+import java.util.Scanner;
 public class test {
     public static void main(String[] args){
 //        System.out.println("姓名：张三");
@@ -26,18 +26,21 @@ public class test {
 //        System.out.println(b1);
 //        System.out.println(l1);
 //        System.out.println(d1);
-          int n1 = 12;
-          int n2 = 30;
-          int n3 = -43;
+//          int n1 = 12;
+//          int n2 = 30;
+//          int n3 = -43;
 //          int max = (n1>n2) ? n1:((n2>n3)?n2:n3);
 //          System.out.println(max);
-          if (n1 > n2 && n1 > n3){
-              System.out.println("最大值是"+n1);
-          } else if (n2 > n1 && n2 > n3) {
-              System.out.println("最大值是"+n2);
-          }
-          else{
-              System.out.println("最大值是"+n3);
-          }
+//          if (n1 > n2 && n1 > n3){
+//              System.out.println("最大值是"+n1);
+//          } else if (n2 > n1 && n2 > n3) {
+//              System.out.println("最大值是"+n2);
+//          }
+//          else{
+//              System.out.println("最大值是"+n3);
+//          }
+          Scanner scanner = new Scanner(System.in);
+          int input = scanner.nextInt();
+          System.out.println(input);
     }
 }
