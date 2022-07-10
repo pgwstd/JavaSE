@@ -40,7 +40,21 @@ public class test {
 //              System.out.println("最大值是"+n3);
 //          }
           Scanner scanner = new Scanner(System.in);
-          int input = scanner.nextInt();
-          System.out.println(input);
+//          int input = scanner.nextInt();
+          System.out.println("请输入你的姓名:");
+          String name = scanner.nextLine();
+//          System.out.println(name);
+
+        System.out.println("请输入你的年龄:");
+        int age = scanner.nextInt();
+//        System.out.println(age);
+
+        System.out.println("请输入你的体重:");
+        double weight = scanner.nextDouble();
+//        System.out.println(weight);
+
+        System.out.println("你是不是成年人:");
+        boolean keil = scanner.nextBoolean();
+        System.out.println(name+"\t"+age+"\t"+weight+"\t"+keil);
     }
 }
