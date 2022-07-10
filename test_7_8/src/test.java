@@ -29,7 +29,15 @@ public class test {
           int n1 = 12;
           int n2 = 30;
           int n3 = -43;
-          int max = (n1>n2) ? n1:((n2>n3)?n2:n3);
-          System.out.println(max);
+//          int max = (n1>n2) ? n1:((n2>n3)?n2:n3);
+//          System.out.println(max);
+          if (n1 > n2 && n1 > n3){
+              System.out.println("最大值是"+n1);
+          } else if (n2 > n1 && n2 > n3) {
+              System.out.println("最大值是"+n2);
+          }
+          else{
+              System.out.println("最大值是"+n3);
+          }
     }
 }
