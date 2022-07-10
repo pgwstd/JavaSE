@@ -14,6 +14,13 @@ public class test {
         double d1 =(double) n / n2;
         int m2 = 12;
         int n3 = -5;
+        int num = 10;
+        int num2 = 20;
+        num = num ^ num2;
+        num2 = num ^ num2;
+        num = num ^ num2;
+        System.out.println(num);
+        System.out.println(num2);
         System.out .println(m2 % n3);
         System.out .println(f1);
         System.out.println(b1);
