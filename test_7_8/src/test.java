@@ -63,7 +63,7 @@ public class test {
         if(input < 60){
             System.out.println("不及格");
         }
-        else if (input < 80){
+        else if (input >60 && input < 80){
             System.out.println("中等");
         }
         else if (input < 90){
