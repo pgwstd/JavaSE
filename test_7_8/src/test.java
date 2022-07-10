@@ -39,22 +39,37 @@ public class test {
 //          else{
 //              System.out.println("最大值是"+n3);
 //          }
-          Scanner scanner = new Scanner(System.in);
+//          Scanner scanner = new Scanner(System.in);
 //          int input = scanner.nextInt();
-          System.out.println("请输入你的姓名:");
-          String name = scanner.nextLine();
+//          System.out.println("请输入你的姓名:");
+//          String name = scanner.nextLine();
 //          System.out.println(name);
-
-        System.out.println("请输入你的年龄:");
-        int age = scanner.nextInt();
+//
+//        System.out.println("请输入你的年龄:");
+//        int age = scanner.nextInt();
 //        System.out.println(age);
 
-        System.out.println("请输入你的体重:");
-        double weight = scanner.nextDouble();
+//        System.out.println("请输入你的体重:");
+//        double weight = scanner.nextDouble();
 //        System.out.println(weight);
 
-        System.out.println("你是不是成年人:");
-        boolean keil = scanner.nextBoolean();
-        System.out.println(name+"\t"+age+"\t"+weight+"\t"+keil);
+//        System.out.println("你是不是成年人:");
+//        boolean keil = scanner.nextBoolean();
+//        System.out.println(name+"\t"+age+"\t"+weight+"\t"+keil);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入成绩");
+        double input = scanner.nextDouble();
+
+        if(input < 60){
+            System.out.println("不及格");
+        }
+        else if (input < 80){
+            System.out.println("中等");
+        }
+        else if (input < 90){
+            System.out.println("优秀");
+        }else{
+            System.out.println("牛逼");
+        }
     }
 }
