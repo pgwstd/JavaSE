@@ -139,25 +139,56 @@ public class test {
 //            }
 //            System.out.println();
 //        }
-        Scanner scanner = new Scanner(System.in);
-        int max = 0;
-        int min = 0;
-        System.out.println("请输入第一个数:");
-        int input = scanner.nextInt();
-        System.out.println("请输入第二个数:");
-        int input2 = scanner.nextInt();
-        max = (input >= input2) ? input:input2;
-        min = (input <= input2) ? input:input2;
-        for (int i = min;i >= 0;i--){
-            if (input % i == 0 && input2 % i == 0){
-                System.out.println("最大公约数是:"+i);
-                break;
-            }
-        }
-        for (int j = max;j <= input * input2;j++){
-            if (j % input == 0 && j % input2 == 0){
-                System.out.println("最小公倍数是:"+j);
-                break;
+//        Scanner scanner = new Scanner(System.in);
+//        int max = 0;
+//        int min = 0;
+//        System.out.println("请输入第一个数:");
+//        int input = scanner.nextInt();
+//        System.out.println("请输入第二个数:");
+//        int input2 = scanner.nextInt();
+//        max = (input >= input2) ? input:input2;
+//        min = (input <= input2) ? input:input2;
+//        for (int i = min;i >= 0;i--){
+//            if (input % i == 0 && input2 % i == 0){
+//                System.out.println("最大公约数是:"+i);
+//                break;
+//            }
+//        }
+//        for (int j = max;j <= input * input2;j++){
+//            if (j % input == 0 && j % input2 == 0){
+//                System.out.println("最小公倍数是:"+j);
+//                break;
+//            }
+//        }
+        //打印1-100的奇数和
+//        int sum = 0;
+//        for (int i = 1;i <= 100;i+=2){
+//            sum+=i;
+//        }
+//        System.out.println("1-100的奇数和"+sum);
+        //打印1-100之间是7倍数的个数
+//        int count = 0;
+//        int sum = 0;
+//        for (int i = 1;i <= 100;i++){
+//            if (i % 7 == 0){
+//                count++;
+//                sum += i;
+//            }
+//        }
+//        System.out.println("1-100之间是7倍数的个数"+count+"和为"+sum);
+        //输入100-1000的水仙数
+        int bai = 0;
+        int shi = 0;
+        int ge = 0;
+        for (int i = 100;i <= 1000;i++){
+            //取出百位
+            bai = i % 100;
+            //取出个位
+            shi = i / 10 % 10;
+            //取出十位
+            ge = i % 10;
+            if (((bai * bai * bai) + (shi * shi * shi) + (ge * ge * ge)) == i){
+                System.out.println(i);
             }
         }
     }
