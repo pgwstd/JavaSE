@@ -119,9 +119,13 @@ public class test {
 //            System.out.println("输入有误！");
 //        }
 //        System.out.println(year+"年"+month+"月"+day+"号是当年的第"+sumDays);
-        for (int i = 0;i < 100; i+=2){
+        int sum = 0;
+        for (int i = 0;i <= 100; i+=2){
             System.out.println(i);
+             sum += i;
+
         }
+        System.out.println(sum);
     }
 
 }
