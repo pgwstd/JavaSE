@@ -71,54 +71,57 @@ public class test {
 //        }else{
 //            System.out.println("牛逼");
 //        }
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("请输入年份：");
-        int year = scanner.nextInt();
-        System.out.println("请输入月份：");
-        int month = scanner.nextInt();
-        System.out.println("请输入日期：");
-        int day = scanner.nextInt();
-        int sumDays = 0;
-        if (year > 0 && (month > 0 && month <=12) && (day > 0 && day <= 31)){
-            switch (month){
-                case 12:
-                    sumDays += 31;
-                case 11:
-                    sumDays += 30;
-                case 10:
-                    sumDays += 31;
-                case 9:
-                    sumDays += 30;
-                case 8:
-                    sumDays += 31;
-                case 7:
-                    sumDays += 31;
-                case 6:
-                    sumDays += 30;
-                case 5:
-                    sumDays += 31;
-                case 4:
-                    sumDays += 30;
-                case 3:
-                    sumDays += 31;
-                case 2:
-                    if (year % 100 != 0 && year % 4==0 || year % 400 == 0){
-                        sumDays += 29;
-                    }
-                    else{
-                        sumDays += 28;
-                    }
-                case 1:
-                    sumDays += day;
-            }
-
-
-
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("请输入年份：");
+//        int year = scanner.nextInt();
+//        System.out.println("请输入月份：");
+//        int month = scanner.nextInt();
+//        System.out.println("请输入日期：");
+//        int day = scanner.nextInt();
+//        int sumDays = 0;
+//        if (year > 0 && (month > 0 && month <=12) && (day > 0 && day <= 31)){
+//            switch (month){
+//                case 12:
+//                    sumDays += 31;
+//                case 11:
+//                    sumDays += 30;
+//                case 10:
+//                    sumDays += 31;
+//                case 9:
+//                    sumDays += 30;
+//                case 8:
+//                    sumDays += 31;
+//                case 7:
+//                    sumDays += 31;
+//                case 6:
+//                    sumDays += 30;
+//                case 5:
+//                    sumDays += 31;
+//                case 4:
+//                    sumDays += 30;
+//                case 3:
+//                    sumDays += 31;
+//                case 2:
+//                    if (year % 100 != 0 && year % 4==0 || year % 400 == 0){
+//                        sumDays += 29;
+//                    }
+//                    else{
+//                        sumDays += 28;
+//                    }
+//                case 1:
+//                    sumDays += day;
+//            }
+//
+//
+//
+//        }
+//        else{
+//            System.out.println("输入有误！");
+//        }
+//        System.out.println(year+"年"+month+"月"+day+"号是当年的第"+sumDays);
+        for (int i = 0;i < 100; i+=2){
+            System.out.println(i);
         }
-        else{
-            System.out.println("输入有误！");
-        }
-        System.out.println(year+"年"+month+"月"+day+"号是当年的第"+sumDays);
     }
 
 }
