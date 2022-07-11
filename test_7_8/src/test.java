@@ -56,20 +56,37 @@ public class test {
 //        System.out.println("你是不是成年人:");
 //        boolean keil = scanner.nextBoolean();
 //        System.out.println(name+"\t"+age+"\t"+weight+"\t"+keil);
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("请输入成绩");
+//        double input = scanner.nextDouble();
+//
+//        if(input < 60){
+//            System.out.println("不及格");
+//        }
+//        else if (input >60 && input < 80){
+//            System.out.println("中等");
+//        }
+//        else if (input < 90){
+//            System.out.println("优秀");
+//        }else{
+//            System.out.println("牛逼");
+//        }
         Scanner scanner = new Scanner(System.in);
-        System.out.println("请输入成绩");
-        double input = scanner.nextDouble();
+        System.out.println("请输入年份：");
+        int year = scanner.nextInt();
+        System.out.println("请输入月份：");
+        int month = scanner.nextInt();
+        System.out.println("请输入日期：");
+        int day = scanner.nextInt();
+        int sumDays = 0;
+        if (year > 0 && (month > 0 && month <=12) && (day > 0 && day <= 31)){
+            if (year % 100 != 0 && year % 4==0 || year % 400 == 0){
+                System.out.println(year+"年"+month+"月"+day+"号是当年的第"+sumDays);
+            }
 
-        if(input < 60){
-            System.out.println("不及格");
         }
-        else if (input >60 && input < 80){
-            System.out.println("中等");
-        }
-        else if (input < 90){
-            System.out.println("优秀");
-        }else{
-            System.out.println("牛逼");
+        else{
+            System.out.println("输入有误！");
         }
     }
 }
