@@ -195,7 +195,8 @@ public class test {
         Scanner scanner = new Scanner(System.in);
         int positiveNumber = 0;  //定义正数计数
         int negativeNumber = 0; //定义负数计数
-        while(true){
+//        while(true){
+        for (;;){
             int num = scanner.nextInt();
              if (num > 0){
                  positiveNumber++;
