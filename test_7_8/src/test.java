@@ -236,11 +236,11 @@ public class test {
 //            }
 //            System.out.println();
 //        }
-      //找出1-100的质数
-
-        for (int i = 1;i <= 100;i++){
+      //找出1-100000的质数
+        long start = System.currentTimeMillis();  //获取运行时间
+        for (int i = 1;i <= 100000;i++){
             boolean isFlag = true;
-            for (int j = 2;j < i;j++){
+            for (int j = 2;j < Math.sqrt(i);j++){  //Math.sqrt(i)取出这个数是开方
                 if (i % j == 0){
                     isFlag = false;
                     break;
@@ -251,6 +251,8 @@ public class test {
             }
 
         }
+        long end = System.currentTimeMillis();
+        System.out.println("运行的时间是:"+(end - start));  //26596  4313 141
     }
 
 }
