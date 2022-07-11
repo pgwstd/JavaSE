@@ -192,24 +192,51 @@ public class test {
 //            }
 //        }
         //从键盘输入数字计算输入的正负数的个数
-        Scanner scanner = new Scanner(System.in);
-        int positiveNumber = 0;  //定义正数计数
-        int negativeNumber = 0; //定义负数计数
-//        while(true){
-        for (;;){
-            int num = scanner.nextInt();
-             if (num > 0){
-                 positiveNumber++;
-             }
-             else if (num < 0){
-                 negativeNumber++;
-             }
-             else{
-                 break;
-             }
+//        Scanner scanner = new Scanner(System.in);
+//        int positiveNumber = 0;  //定义正数计数
+//        int negativeNumber = 0; //定义负数计数
+////        while(true){
+//        for (;;){
+//            int num = scanner.nextInt();
+//             if (num > 0){
+//                 positiveNumber++;
+//             }
+//             else if (num < 0){
+//                 negativeNumber++;
+//             }
+//             else{
+//                 break;
+//             }
+//        }
+//        System.out.println("正数个数是:"+positiveNumber);
+//        System.out.println("正数个数是:"+negativeNumber);
+//        for (int i = 1;i <= 6;i++){
+//            for (int j = 1;j <= 6;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//        for (int i = 1;i <= 6;i++){
+//            for (int j = 1;j <= i;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//        for (int i = 1;i <= 6;i++){
+//            for (int j = 1;j <= 6-i;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+        //9 * 9乘法表
+        for (int i = 1;i <= 9;i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + "*" + j + "=" + (i * j) + " ");
+
+            }
+            System.out.println();
         }
-        System.out.println("正数个数是:"+positiveNumber);
-        System.out.println("正数个数是:"+negativeNumber);
+
     }
 
 }
