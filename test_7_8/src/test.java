@@ -80,13 +80,45 @@ public class test {
         int day = scanner.nextInt();
         int sumDays = 0;
         if (year > 0 && (month > 0 && month <=12) && (day > 0 && day <= 31)){
-            if (year % 100 != 0 && year % 4==0 || year % 400 == 0){
-                System.out.println(year+"年"+month+"月"+day+"号是当年的第"+sumDays);
+            switch (month){
+                case 12:
+                    sumDays += 31;
+                case 11:
+                    sumDays += 30;
+                case 10:
+                    sumDays += 31;
+                case 9:
+                    sumDays += 30;
+                case 8:
+                    sumDays += 31;
+                case 7:
+                    sumDays += 31;
+                case 6:
+                    sumDays += 30;
+                case 5:
+                    sumDays += 31;
+                case 4:
+                    sumDays += 30;
+                case 3:
+                    sumDays += 31;
+                case 2:
+                    if (year % 100 != 0 && year % 4==0 || year % 400 == 0){
+                        sumDays += 29;
+                    }
+                    else{
+                        sumDays += 28;
+                    }
+                case 1:
+                    sumDays += day;
             }
+
+
 
         }
         else{
             System.out.println("输入有误！");
         }
+        System.out.println(year+"年"+month+"月"+day+"号是当年的第"+sumDays);
     }
+
 }
