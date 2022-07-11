@@ -177,20 +177,38 @@ public class test {
 //        }
 //        System.out.println("1-100之间是7倍数的个数"+count+"和为"+sum);
         //输入100-1000的水仙数
-        int bai = 0;
-        int shi = 0;
-        int ge = 0;
-        for (int i = 100;i <= 1000;i++){
-            //取出百位
-            bai = i % 100;
-            //取出个位
-            shi = i / 10 % 10;
-            //取出十位
-            ge = i % 10;
-            if (((bai * bai * bai) + (shi * shi * shi) + (ge * ge * ge)) == i){
-                System.out.println(i);
-            }
+//        int bai = 0;
+//        int shi = 0;
+//        int ge = 0;
+//        for (int i = 100;i <= 1000;i++){
+//            //取出百位
+//            bai = i % 100;
+//            //取出个位
+//            shi = i / 10 % 10;
+//            //取出十位
+//            ge = i % 10;
+//            if (((bai * bai * bai) + (shi * shi * shi) + (ge * ge * ge)) == i){
+//                System.out.println(i);
+//            }
+//        }
+        //从键盘输入数字计算输入的正负数的个数
+        Scanner scanner = new Scanner(System.in);
+        int positiveNumber = 0;  //定义正数计数
+        int negativeNumber = 0; //定义负数计数
+        while(true){
+            int num = scanner.nextInt();
+             if (num > 0){
+                 positiveNumber++;
+             }
+             else if (num < 0){
+                 negativeNumber++;
+             }
+             else{
+                 break;
+             }
         }
+        System.out.println("正数个数是:"+positiveNumber);
+        System.out.println("正数个数是:"+negativeNumber);
     }
 
 }
