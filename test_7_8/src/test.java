@@ -119,13 +119,26 @@ public class test {
 //            System.out.println("输入有误！");
 //        }
 //        System.out.println(year+"年"+month+"月"+day+"号是当年的第"+sumDays);
-        int sum = 0;
-        for (int i = 0;i <= 100; i+=2){
-            System.out.println(i);
-             sum += i;
-
-        }
-        System.out.println(sum);
+//        int sum = 0;
+//        for (int i = 0;i <= 100; i+=2){
+//            System.out.println(i);
+//             sum += i;
+//
+//        }
+//        System.out.println(sum);
+//        for(int i = 1;i <= 150;i++){
+//            System.out.print(i+" ");
+//            if (i % 3 == 0){
+//                System.out.print("三的倍数 ");
+//            }
+//            if (i % 5 == 0){
+//                System.out.print("五的倍数 ");
+//            }
+//            if (i % 7 == 0){
+//                System.out.print("七的倍数 ");
+//            }
+//            System.out.println();
+//        }
     }
 
 }
