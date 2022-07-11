@@ -139,6 +139,27 @@ public class test {
 //            }
 //            System.out.println();
 //        }
+        Scanner scanner = new Scanner(System.in);
+        int max = 0;
+        int min = 0;
+        System.out.println("请输入第一个数:");
+        int input = scanner.nextInt();
+        System.out.println("请输入第二个数:");
+        int input2 = scanner.nextInt();
+        max = (input >= input2) ? input:input2;
+        min = (input <= input2) ? input:input2;
+        for (int i = min;i >= 0;i--){
+            if (input % i == 0 && input2 % i == 0){
+                System.out.println("最大公约数是:"+i);
+                break;
+            }
+        }
+        for (int j = max;j <= input * input2;j++){
+            if (j % input == 0 && j % input2 == 0){
+                System.out.println("最小公倍数是:"+j);
+                break;
+            }
+        }
     }
 
 }
