@@ -229,14 +229,27 @@ public class test {
 //            System.out.println();
 //        }
         //9 * 9乘法表
-        for (int i = 1;i <= 9;i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(i + "*" + j + "=" + (i * j) + " ");
+//        for (int i = 1;i <= 9;i++) {
+//            for (int j = 1; j <= i; j++) {
+//                System.out.print(i + "*" + j + "=" + (i * j) + " ");
+//
+//            }
+//            System.out.println();
+//        }
+      //找出1-100的质数
 
+        for (int i = 1;i <= 100;i++){
+            boolean isFlag = true;
+            for (int j = 2;j < i;j++){
+                if (i % j == 0){
+                    isFlag = false;
+                }
             }
-            System.out.println();
-        }
+            if (isFlag){
+                System.out.println(i);
+            }
 
+        }
     }
 
 }
