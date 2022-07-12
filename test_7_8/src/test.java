@@ -269,9 +269,20 @@ public class test {
 //            }
 //
 //        }
-        int arr[] = {1,23,4,5,2,6};
-        for (int i = 0;i <= arr.length;i++){
-            System.out.println(arr[i]);
+//        int arr[] = {1,23,4,5,2,6};
+//        for (int i = 0;i <= arr.length;i++){
+//            System.out.println(arr[i]);
+//        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入学生个数:");
+         int input = scanner.nextInt();
+         int arr[] = new int[input];
+         for (int i = 0;i < arr.length;i++){
+             System.out.print("请输入学生分数:");
+             arr[i] = scanner.nextInt();
+         }
+        for (int i = 0;i < arr.length;i++){
+            System.out.print(arr[i]+" ");
         }
     }
 
