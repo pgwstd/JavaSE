@@ -237,23 +237,38 @@ public class test {
 //            System.out.println();
 //        }
       //找出1-100000的质数
-        long start = System.currentTimeMillis();  //获取运行时间
-        label:for (int i = 1;i <= 100000;i++){
-            boolean isFlag = true;
-            for (int j = 2;j < Math.sqrt(i);j++){  //Math.sqrt(i)取出这个数是开方
+//        long start = System.currentTimeMillis();  //获取运行时间
+//        label:for (int i = 1;i <= 100000;i++){
+//            boolean isFlag = true;
+//            for (int j = 2;j < Math.sqrt(i);j++){  //Math.sqrt(i)取出这个数是开方
+//                if (i % j == 0){
+//                    isFlag = false;
+////                    break;
+//                    continue label;
+//                }
+//            }
+//            if (isFlag){
+//                System.out.println(i);
+//            }
+//
+//        }
+//        long end = System.currentTimeMillis();
+//        System.out.println("运行的时间是:"+(end - start));  //26596  4313 141  113
+        //一个数如果恰好等于它因子之和，那么这个数就叫做完数
+        //找出1-1000之内的完数
+       
+        for (int i = 1;i <= 1000;i++){
+            int factor = 0;
+            for (int j = 1;j < i;j++){
                 if (i % j == 0){
-                    isFlag = false;
-//                    break;
-                    continue label;
+                    factor += j;
                 }
             }
-            if (isFlag){
+            if (i == factor){
                 System.out.println(i);
             }
 
         }
-        long end = System.currentTimeMillis();
-        System.out.println("运行的时间是:"+(end - start));  //26596  4313 141  113
     }
 
 }
