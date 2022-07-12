@@ -256,18 +256,22 @@ public class test {
 //        System.out.println("运行的时间是:"+(end - start));  //26596  4313 141  113
         //一个数如果恰好等于它因子之和，那么这个数就叫做完数
         //找出1-1000之内的完数
-
-        for (int i = 1;i <= 1000;i++){
-            int factor = 0;
-            for (int j = 1;j < i;j++){
-                if (i % j == 0){
-                    factor += j;
-                }
-            }
-            if (i == factor){
-                System.out.println(i);
-            }
-
+//
+//        for (int i = 1;i <= 1000;i++){
+//            int factor = 0;
+//            for (int j = 1;j < i;j++){
+//                if (i % j == 0){
+//                    factor += j;
+//                }
+//            }
+//            if (i == factor){
+//                System.out.println(i);
+//            }
+//
+//        }
+        int arr[] = {1,23,4,5,2,6};
+        for (int i = 0;i <= arr.length;i++){
+            System.out.println(arr[i]);
         }
     }
 
