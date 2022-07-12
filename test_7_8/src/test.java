@@ -277,13 +277,22 @@ public class test {
         System.out.println("请输入学生个数:");
          int input = scanner.nextInt();
          int arr[] = new int[input];
-         for (int i = 0;i < arr.length;i++){
+         int max = 0;
+         for (int i = 0;i < arr.length;i++){   //输入学生成绩
              System.out.print("请输入学生分数:");
              arr[i] = scanner.nextInt();
          }
-        for (int i = 0;i < arr.length;i++){
+        for (int i = 0;i < arr.length;i++){  //输出学生成绩里的最高分
+            if (arr[i] > max){
+                max = arr[i];
+            }
+
+        }
+        for (int i = 0;i < arr.length;i++){  //输出学生成绩
             System.out.print(arr[i]+" ");
         }
+        System.out.println();
+        System.out.print("学生成绩里的最高分"+max);
     }
 
 }
