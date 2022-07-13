@@ -1,3 +1,5 @@
+import com.sun.javafx.iio.gif.GIFImageLoaderFactory;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Scanner;
@@ -342,10 +344,19 @@ public class test {
 //        //平均值
 //        System.out.println("平均值是:"+sum / arr.length);
         int arr[] = new int[]{1,2,3,4,5,6,7,8,9,10};
-        int arr2[];
-        arr2 = arr;
+        int arr2[] = new int[10];
+        int key = 5;
+        boolean isFull = false;
+//        arr2 = arr;
+        for (int i = 0;i < arr.length;i++){
+            arr2[i] = arr[i];
+        }
         for (int i = 0;i < arr2.length;i++){
             System.out.print(arr2[i]+" ");
+        }
+        System.out.println();
+        for (int i = 0;i < arr.length;i++){
+            System.out.print(arr[i]+" ");
         }
         System.out.println();
         for (int i = 0;i < arr2.length;i++){
@@ -354,6 +365,25 @@ public class test {
         }
         for (int i = 0;i < arr2.length;i++){
             System.out.print(arr2[i]+" ");
+        }
+        System.out.print("\n");
+        //反转
+        for (int i = arr2.length-1;i >= 0;i--){
+            System.out.print(arr2[i]+" ");
+        }
+        System.out.println();
+        //查找
+        for (int i = 0;i < arr.length;i++){
+            if (arr[i] == key){
+                isFull = true;
+                break;
+            }
+        }
+        if (isFull){
+            System.out.println("找到了");
+        }
+        else {
+            System.out.println("没找到");
         }
     }
 
