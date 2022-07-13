@@ -295,8 +295,12 @@ public class test {
 //        System.out.println();
 //        System.out.print("学生成绩里的最高分"+max);
         int arr[][] = new int[][]{{1,23,4},{7,8,9,11},{12,56,7,1}};
+        int arr2[][] = new int[3][2];
         System.out.println(arr.length);  //3
         System.out.println(arr[1].length);  //4
+        System.out.println(arr2.length);  //3
+        System.out.println(arr2[1].length);  //2
+//        System.out.println(arr2[1][2]);  //null
         for (int i = 0;i < arr.length;i++){
             for (int j = 0; j < arr[i].length; j++) {
                 System.out.print(arr[i][j]+" ");
