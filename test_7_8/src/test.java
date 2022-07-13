@@ -300,7 +300,8 @@ public class test {
         System.out.println(arr[1].length);  //4
         System.out.println(arr2.length);  //3
         System.out.println(arr2[1].length);  //2
-//        System.out.println(arr2[1]);  //null
+//        System.out.println(arr2[1]);  //地址值
+//        System.out.println(arr2[1][1]);  //null
         for (int i = 0;i < arr.length;i++){
             for (int j = 0; j < arr[i].length; j++) {
                 System.out.print(arr[i][j]+" ");
