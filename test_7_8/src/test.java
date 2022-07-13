@@ -385,32 +385,34 @@ public class test {
 //        else {
 //            System.out.println("没找到");
 //        }
-        String arr[] = new String[]{"AA","BB","CC","DD","EE","FF"};
-        //数组复制
-        String arr2[] = new String[arr.length];
-        String key = "DD";
-        boolean isFull = false;
-        for (int i = 0;i < arr.length;i++){
-            arr2[i] = arr[i];
-        }
-        //遍历arr2数组
-        for (int i = 0;i < arr2.length;i++){
-            System.out.print(arr2[i]+" ");
-        }
-        System.out.println();
-        //查找
-        for (int i = 0;i < arr.length;i++){
-            if (key.equals(arr[i])){
-                isFull = true;
-                break;
-            }
-        }
-        if (isFull){
-            System.out.println("找到了");
-        }
-        else{
-            System.out.println("没找到");
-        }
+//        String arr[] = new String[]{"AA","BB","CC","DD","EE","FF"};
+//        //数组复制
+//        String arr2[] = new String[arr.length];
+//        String key = "DD";
+//        boolean isFull = false;
+//        for (int i = 0;i < arr.length;i++){
+//            arr2[i] = arr[i];
+//        }
+//        //遍历arr2数组
+//        for (int i = 0;i < arr2.length;i++){
+//            System.out.print(arr2[i]+" ");
+//        }
+//        System.out.println();
+//        //查找
+//        for (int i = 0;i < arr.length;i++){
+//            if (key.equals(arr[i])){
+//                isFull = true;
+//                break;
+//            }
+//        }
+//        if (isFull){
+//            System.out.println("找到了");
+//        }
+//        else{
+//            System.out.println("没找到");
+//        }
+        //二分查找
+
     }
 
 }
