@@ -294,20 +294,53 @@ public class test {
 //        }
 //        System.out.println();
 //        System.out.print("学生成绩里的最高分"+max);
-        int arr[][] = new int[][]{{1,23,4},{7,8,9,11},{12,56,7,1}};
-        int arr2[][] = new int[3][2];
-        System.out.println(arr.length);  //3
-        System.out.println(arr[1].length);  //4
-        System.out.println(arr2.length);  //3
-        System.out.println(arr2[1].length);  //2
-//        System.out.println(arr2[1]);  //地址值
-//        System.out.println(arr2[1][1]);  //null
-        for (int i = 0;i < arr.length;i++){
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j]+" ");
-            }
-            System.out.println();
+//        int arr[][] = new int[][]{{1,23,4},{7,8,9,11},{12,56,7,1}};
+//        int arr2[][] = new int[3][2];
+//        System.out.println(arr.length);  //3
+//        System.out.println(arr[1].length);  //4
+//        System.out.println(arr2.length);  //3
+//        System.out.println(arr2[1].length);  //2
+////        System.out.println(arr2[1]);  //地址值
+////        System.out.println(arr2[1][1]);  //null
+//        for (int i = 0;i < arr.length;i++){
+//            for (int j = 0; j < arr[i].length; j++) {
+//                System.out.print(arr[i][j]+" ");
+//            }
+//            System.out.println();
+//        }
+        int arr[] = new int[10];
+        int sum = 0;
+
+        //赋值
+         for (int i = 0;i < arr.length;i++){
+             arr[i] = (int)(Math.random() * (99 - 10 +1) + 10);  //赋随机值10-99
+         }
+         //遍历
+        for (int j = 0;j < arr.length;j++){
+            System.out.print(arr[j] +" ");
         }
+        System.out.println();
+        //找出最大值
+        int max = arr[0];
+        for (int m = 0;m < arr.length;m++){
+            if (arr[m] > max)
+                max = arr[m];
+        }
+        System.out.println("最大值是:"+max);
+        //找出最小值
+        int min = arr[0];
+        for (int n = 0;n < arr.length;n++){
+            if (arr[n] < min)
+                min = arr[n];
+        }
+        System.out.println("最小值是:"+min);
+        //总和
+        for (int k = 0;k < arr.length;k++){
+            sum += arr[k];
+        }
+        System.out.println("和是:"+sum);
+        //平均值
+        System.out.println("平均值是:"+sum / arr.length);
     }
 
 }
