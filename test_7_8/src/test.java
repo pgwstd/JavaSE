@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.awt.*;
 import java.util.Scanner;
 public class test {
@@ -273,26 +274,35 @@ public class test {
 //        for (int i = 0;i <= arr.length;i++){
 //            System.out.println(arr[i]);
 //        }
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("请输入学生个数:");
-         int input = scanner.nextInt();
-         int arr[] = new int[input];
-         int max = 0;
-         for (int i = 0;i < arr.length;i++){   //输入学生成绩
-             System.out.print("请输入学生分数:");
-             arr[i] = scanner.nextInt();
-         }
-        for (int i = 0;i < arr.length;i++){  //输出学生成绩里的最高分
-            if (arr[i] > max){
-                max = arr[i];
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("请输入学生个数:");
+//         int input = scanner.nextInt();
+//         int arr[] = new int[input];
+//         int max = 0;
+//         for (int i = 0;i < arr.length;i++){   //输入学生成绩
+//             System.out.print("请输入学生分数:");
+//             arr[i] = scanner.nextInt();
+//         }
+//        for (int i = 0;i < arr.length;i++){  //输出学生成绩里的最高分
+//            if (arr[i] > max){
+//                max = arr[i];
+//            }
+//
+//        }
+//        for (int i = 0;i < arr.length;i++){  //输出学生成绩
+//            System.out.print(arr[i]+" ");
+//        }
+//        System.out.println();
+//        System.out.print("学生成绩里的最高分"+max);
+        int arr[][] = new int[][]{{1,23,4},{7,8,9,11},{12,56,7,1}};
+        System.out.println(arr.length);  //3
+        System.out.println(arr[1].length);  //4
+        for (int i = 0;i < arr.length;i++){
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j]+" ");
             }
-
+            System.out.println();
         }
-        for (int i = 0;i < arr.length;i++){  //输出学生成绩
-            System.out.print(arr[i]+" ");
-        }
-        System.out.println();
-        System.out.print("学生成绩里的最高分"+max);
     }
 
 }
