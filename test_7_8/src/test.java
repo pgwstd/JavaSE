@@ -460,7 +460,16 @@ public class test {
         System.out.println(Arrays.toString(arr2));
         Arrays.fill(arr,10);                        //将指定元素增加到数组
         System.out.println(Arrays.toString(arr));
-
+        Arrays.sort(arr2);                         //从小往大排序
+        System.out.println(Arrays.toString(arr2));
+        int arr3[] = new int[]{1,2,3,4,5,6,7,8,9};
+        int index = Arrays.binarySearch(arr3,22);  //二分查找
+        if (index >= 0){
+            System.out.println("找到了");
+        }
+        else {
+            System.out.println("没找到");
+        }
     }
 
 }
