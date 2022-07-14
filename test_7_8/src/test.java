@@ -436,6 +436,20 @@ public class test {
 //           end--;
 //       }
         //冒泡排序
+        int arr[] = new int[]{12,24,1,22,66,11,23,55,33};
+        int tmp = 0;
+        for (int i = 0;i < arr.length-1;i++){
+            for (int j = 0;j < arr.length - i -1 ;j++){
+                if (arr[j] > arr[j+1]){
+                    tmp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = tmp;
+                }
+            }
+        }
+        for (int n = 0;n < arr.length;n++){
+            System.out.print(arr[n]+"\t");
+        }
     }
 
 }
