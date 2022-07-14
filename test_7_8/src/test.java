@@ -464,9 +464,9 @@ public class test {
         System.out.println(Arrays.toString(arr2));
         int arr3[] = new int[]{1,2,3,4,5,6,7,8,9};
         System.out.println(arr3.toString());
-        int index = Arrays.binarySearch(arr3,22);  //二分查找
+        int index = Arrays.binarySearch(arr3,2);  //二分查找
         if (index >= 0){
-            System.out.println("找到了");
+            System.out.println("找到了,位置是:"+(index+1));
         }
         else {
             System.out.println("没找到");
