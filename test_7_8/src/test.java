@@ -2,6 +2,8 @@ import com.sun.javafx.iio.gif.GIFImageLoaderFactory;
 
 import javax.swing.*;
 import java.awt.*;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 public class test {
     public static void main(String[] args){
@@ -436,20 +438,29 @@ public class test {
 //           end--;
 //       }
         //冒泡排序
-        int arr[] = new int[]{12,24,1,22,66,11,23,55,33};
-        int tmp = 0;
-        for (int i = 0;i < arr.length-1;i++){
-            for (int j = 0;j < arr.length - i -1 ;j++){
-                if (arr[j] > arr[j+1]){
-                    tmp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = tmp;
-                }
-            }
-        }
-        for (int n = 0;n < arr.length;n++){
-            System.out.print(arr[n]+"\t");
-        }
+//        int arr[] = new int[]{12,24,1,22,66,11,23,55,33};
+//        int tmp = 0;
+//        for (int i = 0;i < arr.length-1;i++){
+//            for (int j = 0;j < arr.length - i -1 ;j++){
+//                if (arr[j] > arr[j+1]){
+//                    tmp = arr[j];
+//                    arr[j] = arr[j+1];
+//                    arr[j+1] = tmp;
+//                }
+//            }
+//        }
+//        for (int n = 0;n < arr.length;n++){
+//            System.out.print(arr[n]+"\t");
+//        }
+        int arr[] = new int[]{12,34,56,23,63,11,55};
+        int arr2[] = new int[]{12,23,112,441,22,45};
+        boolean isFull = Arrays.equals(arr,arr2);  //比较两个数组
+        System.out.println(isFull);
+        System.out.println(Arrays.toString(arr));  //输出数组
+        System.out.println(Arrays.toString(arr2));
+        Arrays.fill(arr,10);                        //将指定元素增加到数组
+        System.out.println(Arrays.toString(arr));
+
     }
 
 }
