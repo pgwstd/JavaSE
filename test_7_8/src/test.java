@@ -452,25 +452,26 @@ public class test {
 //        for (int n = 0;n < arr.length;n++){
 //            System.out.print(arr[n]+"\t");
 //        }
-        int arr[] = new int[]{12,34,56,23,63,11,55};
-        int arr2[] = new int[]{12,23,112,441,22,45};
-        boolean isFull = Arrays.equals(arr,arr2);  //比较两个数组
-        System.out.println(isFull);
-        System.out.println(Arrays.toString(arr));  //输出数组
-        System.out.println(Arrays.toString(arr2));
-        Arrays.fill(arr,10);                        //将指定元素增加到数组
-        System.out.println(Arrays.toString(arr));
-        Arrays.sort(arr2);                         //从小往大排序
-        System.out.println(Arrays.toString(arr2));
-        int arr3[] = new int[]{1,2,3,4,5,6,7,8,9};
-        System.out.println(arr3.toString());
-        int index = Arrays.binarySearch(arr3,2);  //二分查找
-        if (index >= 0){
-            System.out.println("找到了,位置是:"+(index+1));
-        }
-        else {
-            System.out.println("没找到");
-        }
+//        int arr[] = new int[]{12,34,56,23,63,11,55};
+//        int arr2[] = new int[]{12,23,112,441,22,45};
+//        boolean isFull = Arrays.equals(arr,arr2);  //比较两个数组
+//        System.out.println(isFull);
+//        System.out.println(Arrays.toString(arr));  //输出数组
+//        System.out.println(Arrays.toString(arr2));
+//        Arrays.fill(arr,10);                        //将指定元素增加到数组
+//        System.out.println(Arrays.toString(arr));
+//        Arrays.sort(arr2);                         //从小往大排序
+//        System.out.println(Arrays.toString(arr2));
+//        int arr3[] = new int[]{1,2,3,4,5,6,7,8,9};
+//        System.out.println(arr3.toString());
+//        int index = Arrays.binarySearch(arr3,2);  //二分查找
+//        if (index >= 0){
+//            System.out.println("找到了,位置是:"+(index+1));
+//        }
+//        else {
+//            System.out.println("没找到");
+//        }
+
     }
 
 }
