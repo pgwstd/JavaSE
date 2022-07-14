@@ -463,6 +463,7 @@ public class test {
         Arrays.sort(arr2);                         //从小往大排序
         System.out.println(Arrays.toString(arr2));
         int arr3[] = new int[]{1,2,3,4,5,6,7,8,9};
+        System.out.println(arr3.toString());
         int index = Arrays.binarySearch(arr3,22);  //二分查找
         if (index >= 0){
             System.out.println("找到了");
