@@ -412,29 +412,30 @@ public class test {
 //            System.out.println("没找到");
 //        }
         //二分查找
-       int arr[] = new int[]{12,14,15,23,54,67,78,88,99};
-       int key = 14;
-       int start = 0;
-       int end = arr.length-1;
-       int mid = 0;
-       while (start <= end){
-           mid = (start + end) / 2;
-           if(arr[mid] > key){
-
-               end = mid-1;
-           }
-           else if (arr[mid] < key){
-               start = mid+1;
-           }
-           else if (arr[mid] == key){
-               System.out.println("找到了");
-           }
-           else {
-               System.out.println("不存在");
-           }
-           start++;
-           end--;
-       }
+//       int arr[] = new int[]{12,14,15,23,54,67,78,88,99};
+//       int key = 14;
+//       int start = 0;
+//       int end = arr.length-1;
+//       int mid = 0;
+//       while (start <= end){
+//           mid = (start + end) / 2;
+//           if(arr[mid] > key){
+//
+//               end = mid-1;
+//           }
+//           else if (arr[mid] < key){
+//               start = mid+1;
+//           }
+//           else if (arr[mid] == key){
+//               System.out.println("找到了");
+//           }
+//           else {
+//               System.out.println("不存在");
+//           }
+//           start++;
+//           end--;
+//       }
+        //冒泡排序
     }
 
 }
