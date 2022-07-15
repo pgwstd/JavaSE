@@ -472,6 +472,17 @@ public class test {
 //            System.out.println("没找到");
 //        }
 
+
+//        c1.rabir = 1;
+//        System.out.println(c1.manzi());
+//        //求圆的面积
+//         class Crire{
+//            double rabir = 0;  //定义属性
+//            public double manzi(){
+//
+//                return Math.PI * rabir * rabir;
+//            }
+//        }
     }
 
 }
