@@ -6,7 +6,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 public class test {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        System.out.println("姓名：张三");
 //        System.out.println();
 //        System.out.println("性别：男");
@@ -241,7 +241,7 @@ public class test {
 //            }
 //            System.out.println();
 //        }
-      //找出1-100000的质数
+        //找出1-100000的质数
 //        long start = System.currentTimeMillis();  //获取运行时间
 //        label:for (int i = 1;i <= 100000;i++){
 //            boolean isFlag = true;
@@ -483,6 +483,36 @@ public class test {
 //                return Math.PI * rabir * rabir;
 //            }
 //        }
+        Student s1 = new Student();
+        s1.name = "张三";
+        s1.age = 18;
+        s1.sex = "男";
+        System.out.println(s1.name+s1.age+s1.sex);
+        s1.eat();
+        System.out.println("学生在跑步跑了"+s1.run(3.2)+"米");
+        Student[] s2 = new Student[5];
+        for (int i = 0;i < s2.length;i++){
+            s2[i] = new Student();
+            s2[i].age = i + 1;
+
+        }
+//        System.out.println(Arrays.toString(s2));
+        for (int i = 0;i < s2.length;i++){
+            System.out.println(s2[i].age+" ");
+        }
+    }
+}
+    class Student{
+        String name;
+        int age;
+        String sex;
+        double k;
+        public void  eat(){
+            System.out.println("学生在吃饭");
+        }
+        public double run(double m){
+            k = m * 1000;
+            return k;
+        }
     }
 
-}
