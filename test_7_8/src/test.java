@@ -524,6 +524,9 @@ public class test {
         }
         public void show(String ... str){
             System.out.println(2);
+            for (int i = 0;i < str.length;i++){
+                System.out.println(str[i]);
+            }
         }
     }
 
