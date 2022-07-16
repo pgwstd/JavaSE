@@ -496,6 +496,7 @@ public class test {
             s2[i].age = i + 1;
 
         }
+        
 //        System.out.println(Arrays.toString(s2));
         for (int i = 0;i < s2.length;i++){
             System.out.println(s2[i].age+" ");
