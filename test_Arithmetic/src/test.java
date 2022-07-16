@@ -10,10 +10,8 @@ public class test {
         double num = scanner.nextDouble();
         System.out.println(typeConversion(num));
     }
-
     public static int typeConversion(double d) {
         //write your code here......
         return (int) d;
-
     }
 }
