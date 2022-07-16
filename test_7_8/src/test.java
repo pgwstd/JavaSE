@@ -515,18 +515,29 @@ public class test {
 //            k = m * 1000;
 //            return k;
         //可变个数开参  类型  ... 变量名
-        test k = new test();
-        k.show("hello");
-        k.show("qwe","24","fsf");
+//        test k = new test();
+//        k.show("hello");
+//        k.show("qwe","24","fsf");
+//        }
+//        public void show(String str){
+//            System.out.println(1);
+//        }
+//        public void show(String ... str){
+//            System.out.println(2);
+//            for (int i = 0;i < str.length;i++){
+//                System.out.println(str[i]);
+//            }
+        int m = 10;
+        int n = 20;
+        test y = new test();
+        System.out.println(m+" "+n);
+        y.Swap(m,n);
+        System.out.println(m+" "+n);
         }
-        public void show(String str){
-            System.out.println(1);
-        }
-        public void show(String ... str){
-            System.out.println(2);
-            for (int i = 0;i < str.length;i++){
-                System.out.println(str[i]);
-            }
+        public void Swap(int m,int n){
+        int tmp = m;
+        m = n;
+        n = tmp;
         }
     }
 
