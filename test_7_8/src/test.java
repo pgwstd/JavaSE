@@ -534,10 +534,14 @@ public class test {
         y.Swap(m,n);
         System.out.println(m+" "+n);
         }
-        public void Swap(int m,int n){
-        int tmp = m;
-        m = n;
-        n = tmp;
+
+
+
+            public void Swap(int m,int n) {
+                int tmp = m;
+                m = n;
+                n = tmp;
+
         }
     }
 
