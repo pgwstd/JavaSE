@@ -514,7 +514,16 @@ public class test {
 //        public double run(double m){
 //            k = m * 1000;
 //            return k;
-
+        //可变个数开参  类型  ... 变量名
+        test k = new test();
+        k.show("hello");
+        k.show("qwe","24","fsf");
+        }
+        public void show(String str){
+            System.out.println(1);
+        }
+        public void show(String ... str){
+            System.out.println(2);
         }
     }
 
