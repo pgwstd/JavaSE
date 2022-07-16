@@ -6,10 +6,13 @@ public class test_7_16 {
           Scanner scanner = new Scanner(System.in);
           int a = scanner.nextInt();
           int b = scanner.nextInt();
+         double x = scanner.nextDouble();
+         int y = scanner.nextInt();
           scanner.close();  //扫描两个数
           test_7_16 p = new test_7_16();  //新建一个调用
           System.out.println(p.Sum(a,b));
-
+          test_7_16 l = new test_7_16();
+         System.out.println(l.Sum(x,y));
     }
 
 
