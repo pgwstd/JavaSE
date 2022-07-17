@@ -527,20 +527,20 @@ public class test {
 //            for (int i = 0;i < str.length;i++){
 //                System.out.println(str[i]);
 //            }
-        int m = 10;
-        int n = 20;
-        test y = new test();
-        System.out.println(m+" "+n);
-        y.Swap(m,n);
-        System.out.println(m+" "+n);
-        }
-
-
-
-            public void Swap(int m,int n) {
-                int tmp = m;
-                m = n;
-                n = tmp;
+//        int m = 10;
+//        int n = 20;
+//        test y = new test();
+//        System.out.println(m+" "+n);
+//        y.Swap(m,n);
+//        System.out.println(m+" "+n);
+//        }
+//
+//
+//
+//            public void Swap(int m,int n) {
+//                int tmp = m;
+//                m = n;
+//                n = tmp;
 
         }
     }
