@@ -541,18 +541,39 @@ public class test {
 //                int tmp = m;
 //                m = n;
 //                n = tmp;
-          Scanner scanner = new Scanner(System.in);
-          int n = scanner.nextInt();
-          test k = new test();
-          System.out.println(k.getSum(n));
-        }
-        public int getSum(int x){
-            if (x == 1){
-                return 1;
-            }
-            else{
-                return x + (getSum(x - 1));
-            }
-        }
+//          Scanner scanner = new Scanner(System.in);
+//          int n = scanner.nextInt();
+//          test k = new test();
+//          System.out.println(k.getSum(n));
+//        }
+//        public int getSum(int x){
+//            if (x == 1){
+//                return 1;
+//            }
+//            else{
+//                return x + (getSum(x - 1));
+//            }
+
+        Pop s1 = new Pop();
+        s1.n = 10;
+        s1.m = 20;
+        test y = new test();
+        y.Swap(s1);
+
     }
+
+    public void Swap(Pop s1) {
+        int tmp = s1.m;
+        s1.m = s1.n;
+        s1.n = tmp;
+        System.out.printf(s1.n+" "+s1.m);
+    }
+
+}
+    class Pop {
+        int m = 0;
+        int n = 0;
+    }
+
+
 
