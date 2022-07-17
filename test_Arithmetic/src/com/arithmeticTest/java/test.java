@@ -1,4 +1,5 @@
-/**
+package com.arithmeticTest.java;
+/*
  * 设计一个方法，将一个小于2147483647的double类型变量以截断取整方式转化为int类型
  *
  */

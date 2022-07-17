@@ -1,4 +1,5 @@
-/**
+package com.arithmeticTest.java;
+/*
  * 定义一个int类型变量i,
  * i为由浮点数变量d四舍五入后的整数类型，
  * 请将转换后的i进行输出

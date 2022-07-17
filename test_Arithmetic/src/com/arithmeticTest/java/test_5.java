@@ -1,3 +1,4 @@
+package com.arithmeticTest.java;
 /*
 牛牛商场促销活动：
 满100全额打9折；

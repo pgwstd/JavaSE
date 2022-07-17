@@ -1,4 +1,5 @@
-/**
+package com.arithmeticTest.java;
+/*
  * 在不使用第三个变量的情况下交换两个int类型变量的值
  */
 import java.util.Scanner;
