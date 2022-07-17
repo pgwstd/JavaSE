@@ -541,7 +541,18 @@ public class test {
 //                int tmp = m;
 //                m = n;
 //                n = tmp;
-
+          Scanner scanner = new Scanner(System.in);
+          int n = scanner.nextInt();
+          test k = new test();
+          System.out.println(k.getSum(n));
+        }
+        public int getSum(int x){
+            if (x == 1){
+                return 1;
+            }
+            else{
+                return x + (getSum(x - 1));
+            }
         }
     }
 
