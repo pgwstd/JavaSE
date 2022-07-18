@@ -12,7 +12,7 @@ public class person {
     //方法设置
     //设置年龄
     public void  setAge(int n){
-        age = n;
+        this.age = n;
     }
     //获取年龄
     public int getAge(){
