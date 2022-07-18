@@ -15,17 +15,23 @@ public class test_11 {
 
 
     public static int  getCM(int x, int y) {
-        int valus = 0;
-        if (x >= y && x % y == 0) {
-                valus = x;
+//        if (x >= y && x % y == 0) {
+//                valus = x;
+//        }
+//        else if (x < y && y % x == 0) {
+//                valus = y;
+//        }
+//        else {
+//            valus = x * y;
+//        }
+        int max = (x > y) ? x : y;
+        int min = (x > y) ? y : x;
+        for (int i = min;i <= x * y;i++){
+            if (i % min == 0 && i % max ==0){
+                return i;
+            }
         }
-        else if (x < y && y % x == 0) {
-                valus = y;
-        }
-        else {
-            valus = x * y;
-        }
-        return valus;
+        return 0;
 
     }
 }
