@@ -6,4 +6,5 @@ package com.arithmeticTest.java;
 第n次反弹多高？
  */
 public class test_13 {
+
 }
