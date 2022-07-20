@@ -14,7 +14,7 @@ public class test_14 {
     public Boolean isPrimeNumber(int number) {
 
         //write your code here......
-        for(int i = 2;i < Math.sqrt(number);i++){
+        for(int i = 2;i < Math.sqrt(number);i++){  //如果是能这个值的中间有能被它整除的就不是质数
             if(number % i == 0){
                 return false;
             }
