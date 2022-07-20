@@ -12,9 +12,14 @@ public class test_13 {
         float h = scanner.nextFloat();  //下落的高度
         int n = scanner.nextInt();  //回弹的次数
 
-        double sum = 0;
+        double dis = 0;
+        for(int i=1;i<=n;i++){
+            //高度减半
+            h/=2;
+            //记录距离相应的变化
+            dis += h*3;
+        }
 
-
-        System.out.println(String.format("%.3f", h)+" "+String.format("%.3f", sum));
+        System.out.println(String.format("%.3f", h)+" "+String.format("%.3f", dis-h));
     }
 }
