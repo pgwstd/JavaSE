@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class test_16 {
     public static void main(String[] args) {
         int[] ary = new int[6];
+
         int max;
         int min;
         Scanner scanner = new Scanner(System.in);
