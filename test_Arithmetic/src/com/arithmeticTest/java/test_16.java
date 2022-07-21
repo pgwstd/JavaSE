@@ -13,22 +13,7 @@ public class test_16 {
             ary[i]=scanner.nextInt();
         }
 
-        //write your code here......
-//        int j = 0;
-//        int n = 0;
-//        while (j < ary.length){
-//            if(ary[j] > ary[j+1]){
-//                max = ary[j];
-//            }
-//            j++;
-//        }
-//
-//        while (n < ary.length){
-//            if(ary[n] < ary[n+1]){
-//                min = ary[n];
-//            }
-//            n++;
-//        }
+
         max = ary[0];
         min = ary[0];
         for(int j = 0;j < ary.length;j++){
@@ -40,11 +25,6 @@ public class test_16 {
             }
         }
 
-//        for(int j = 0;j < ary.length - 1;j++){
-//            if(ary[j] < ary[j+1]){
-//                min = ary[j];
-//            }
-//        }
         System.out.println(max+" "+min);
     }
     }
