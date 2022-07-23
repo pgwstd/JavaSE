@@ -4,7 +4,7 @@ public class Circle {
     private double radius;  //圆的半径
 
     public Circle(){        //构造方法，圆的半径默认设为1
-        radius = 1;
+        radius = 1.0;
     }
 
     public void setRadius(double radius){       //设置圆的半径方法

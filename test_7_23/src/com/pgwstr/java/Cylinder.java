@@ -4,7 +4,7 @@ public class Cylinder extends Circle{
     private double length;      //圆柱的长度属性
 
     public Cylinder(){      //将length属性初始化为1的构造方法
-        length = 1;
+        length = 1.0;
     }
 
     public void setLength(double length){       //设置length长度的方法
