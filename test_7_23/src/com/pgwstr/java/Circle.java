@@ -18,4 +18,8 @@ public class Circle {
     public double findArea(){       //计算圆的面积方法
         return Math.PI * radius * radius;
     }
+
+    public void sleep(){
+        System.out.println("学生在睡觉");
+    }
 }

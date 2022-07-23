@@ -18,4 +18,9 @@ public class Cylinder extends Circle{
     public double findVolume(){
         return length * findArea();
     }
+
+    //方法重写
+    public void seelp(){
+        System.out.println("学习在中午的时候睡觉");
+    }
 }
