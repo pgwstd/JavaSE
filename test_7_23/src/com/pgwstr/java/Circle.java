@@ -16,6 +16,6 @@ public class Circle {
     }
 
     public double findArea(){       //计算圆的面积方法
-        return Math.PI * radius;
+        return Math.PI * radius * radius;
     }
 }
