@@ -22,5 +22,8 @@ public class CylinderTest {
 
         Cylinder c4 = new Cylinder();
         c4.seelp();
+        c4.seelpp();
+//        c4.findArea();
+        System.out.println(c4.findArea());
     }
 }

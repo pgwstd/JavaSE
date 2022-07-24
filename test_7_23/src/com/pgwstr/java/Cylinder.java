@@ -20,7 +20,17 @@ public class Cylinder extends Circle{
     }
 
     //方法重写
+
+    public double findArea(){       //计算圆的面积方法
+        return Math.PI * super.getRadius() * super.getRadius() * this.length;
+    }
+
     public void seelp(){
         System.out.println("学习在中午的时候睡觉");
+    }
+
+
+    public void seelpp(){
+        super.sleep();
     }
 }
