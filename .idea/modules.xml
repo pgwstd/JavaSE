@@ -39,6 +39,7 @@
       <module fileurl="file://$PROJECT_DIR$/test_7_24/test_7_24.iml" filepath="$PROJECT_DIR$/test_7_24/test_7_24.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_7_8/test_7_8.iml" filepath="$PROJECT_DIR$/test_7_8/test_7_8.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_Arithmetic/test_Arithmetic.iml" filepath="$PROJECT_DIR$/test_Arithmetic/test_Arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_Class/test_Class.iml" filepath="$PROJECT_DIR$/test_Class/test_Class.iml" />
     </modules>
   </component>
 </project>
