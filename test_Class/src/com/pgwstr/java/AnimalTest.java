@@ -6,7 +6,9 @@ public class AnimalTest {
     public static void main(String[] args) {
         Animal b1 = new Dog();
         b1.func(new Dog());
-        b1.func(new Cat());
+
+        Animal b2 = new Cat();
+        b2.func(new Cat());
     }
 
 
