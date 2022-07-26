@@ -19,7 +19,7 @@ public class Cylinder extends Crcle{
         return Math.PI * super.getRadius() * super.getRadius() * lenght;
     }
 
-    //计算圆柱的表面积
+    //计算圆柱的表面积(重写)
     public double findArea(){
         return super.findArea() * 2 + super.getRadius() * 2 * lenght ;
     }
