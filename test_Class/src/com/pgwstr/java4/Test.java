@@ -28,6 +28,13 @@ public class Test {
         w2.setWash_clothes("洗衣服");
         System.out.println(w2.getCook_dinner());
         System.out.println(w2.getWash_clothes());
-        w2.bady();
+        System.out.println("***************");
+        if (b1 instanceof Woman){
+            Woman w3 = (Woman) b1;
+            w3.setWash_clothes("洗衣服");
+            System.out.println("转换成功");
+        }
+
+
     }
 }
