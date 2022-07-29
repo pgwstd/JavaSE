@@ -10,7 +10,7 @@ public class Test {
         System.out.println(b1.getWeight());
         System.out.println(b1.getHeight());
         //强制转换调用子类中的方法
-        Man m1 = (Man)b1;
+        Man m1 = (Man) b1;
         m1.setPlaygame("英雄联盟");
         System.out.println(m1.getPlaygame());
         m1.play();
@@ -29,12 +29,16 @@ public class Test {
         System.out.println(w2.getCook_dinner());
         System.out.println(w2.getWash_clothes());
         System.out.println("***************");
-        if (b1 instanceof Woman){
+        if (b1 instanceof Woman) {
             Woman w3 = (Woman) b1;
             w3.setWash_clothes("洗衣服");
-            System.out.println("转换成功");
+            System.out.println("女人转换成功");
         }
 
-
+        if (b1 instanceof Man) {
+            Man m2 = (Man) b1;
+            m2.play();
+            System.out.println("男人转换成功");
+        }
     }
 }
