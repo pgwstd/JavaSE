@@ -40,5 +40,13 @@ public class Test {
             m2.play();
             System.out.println("男人转换成功");
         }
+
+        if (b1 instanceof Person){
+            System.out.println("Person");
+        }
+
+        if (b1 instanceof Object){
+            System.out.println("Object");
+        }
     }
 }
