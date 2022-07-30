@@ -1,6 +1,9 @@
 package com.pgwstr.java5;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 /**
  * @author 潘光伟
@@ -12,6 +15,9 @@ public class EqualsTest {
         int i = 10;
         char c = 10;
         double d = 10;
+        Scanner scanner = new Scanner(System.in);
+        int a =scanner.nextInt();
+        Map map = new HashMap();
 //        System.out.println(i == c);
 //        System.out.println(i == d);
 //        System.out.println(c == d);
