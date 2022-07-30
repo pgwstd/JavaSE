@@ -8,15 +8,19 @@ package com.pgwstr.java5;
 public class test {
     public static void main(String[] args) {
         System.out.println("12342");
+
+        eat b1 = new eat();
+        b1.seelpp();
     }
 
     /**
-     * @author pgwstr
-     * @date 2022/7/29 11:08 PM
+     * @author 潘光伟
+     * @date 2022/7/30 12:16 PM
      */
 
-    class eat{
-        public void seelp(){
+
+    static class eat{
+        public void seelpp(){
             System.out.println("睡觉");
         }
     }
