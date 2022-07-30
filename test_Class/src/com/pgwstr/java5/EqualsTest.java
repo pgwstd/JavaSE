@@ -18,8 +18,8 @@ public class EqualsTest {
 
         Customer t1 = new Customer("Tom",21);
         Customer t2 = new Customer("Tom",21);
-        System.out.println(t1 == t2);
-        System.out.println(t1.equals(t2));
+        System.out.println(t1 == t2);//false
+        System.out.println(t1.equals(t2));//falsr-->true
         System.out.println("*************");
         String s1 = new String("abc");
         String s2 = new String("abc");
