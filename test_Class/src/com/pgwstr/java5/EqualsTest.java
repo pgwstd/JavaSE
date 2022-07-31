@@ -1,5 +1,7 @@
 package com.pgwstr.java5;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Date;
 
 /**
@@ -8,6 +10,7 @@ import java.util.Date;
  */
 
 public class EqualsTest {
+    @Test
     public static void main(String[] args) {
 //        int i = 10;
 //        char c = 10;
