@@ -1,7 +1,6 @@
 package com.pgwstr.java5;
 
 import java.util.Date;
-import java.util.Scanner;
 
 /**
  * @author 潘光伟
@@ -10,29 +9,34 @@ import java.util.Scanner;
 
 public class EqualsTest {
     public static void main(String[] args) {
-        int i = 10;
-        char c = 10;
-        double d = 10;
-        Scanner scanner = new Scanner(System.in);
-        int a =scanner.nextInt();
+//        int i = 10;
+//        char c = 10;
+//        double d = 10;
+//        Scanner scanner = new Scanner(System.in);
+//        int a =scanner.nextInt();
 //        Map map = new HashMap();
 //        System.out.println(i == c);
 //        System.out.println(i == d);
 //        System.out.println(c == d);
 
-        Customer t1 = new Customer("Tom",21);
-        Customer t2 = new Customer("Tom",21);
-        System.out.println(t1 == t2);//false
-        System.out.println(t1.equals(t2));//false-->true
-        System.out.println("*************");
-        String s1 = new String("abc");
-        String s2 = new String("abc");
-        System.out.println(s1 == s2);//false
-        System.out.println(s1.equals(s2));//true
-        System.out.println("************");
-        Date d1 = new Date(123323l);
-        Date d2 = new Date(123323l);
-        System.out.println(d1.equals(d2));//true
+//        Customer t1 = new Customer("Tom",21);
+//        Customer t2 = new Customer("Tom",21);
+//        System.out.println(t1 == t2);//false
+//        System.out.println(t1.equals(t2));//false-->true
+//        System.out.println("*************");
+//        String s1 = new String("abc");
+//        String s2 = new String("abc");
+//        System.out.println(s1 == s2);//false
+//        System.out.println(s1.equals(s2));//true
+//        System.out.println("************");
+//        Date d1 = new Date(123323l);
+//        Date d2 = new Date(123323l);
+//        System.out.println(d1.equals(d2));//true
+          Customer s1 = new Customer("tom",21);
+          System.out.println(s1.toString());//没重写toString时输出的是地址值
+
+          Date d3 = new Date(21313233l);
+          System.out.println(d3.toString());
     }
     
     /**

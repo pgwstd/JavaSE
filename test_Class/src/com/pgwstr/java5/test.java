@@ -8,7 +8,7 @@ package com.pgwstr.java5;
 public class test {
     public static void main(String[] args) {
         System.out.println("12342");
-
+        System.out.println("hello world");
         eat b1 = new eat();
         b1.seelpp();
     }
