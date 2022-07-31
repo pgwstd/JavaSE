@@ -7,9 +7,9 @@ import java.util.Date;
  * @date 2022/7/31 9:24 PM
  */
 
-class EqualsTestTest {
+public class EqualsTestTest {
     public static void main(String[] args) {
-        
+
         EqualsTest.Customer t1 = new EqualsTest.Customer("Tom", 21);
         EqualsTest.Customer t2 = new EqualsTest.Customer("Tom", 21);
         System.out.println(t1 == t2);//false
