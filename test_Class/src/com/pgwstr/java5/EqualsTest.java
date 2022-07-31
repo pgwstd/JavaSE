@@ -33,7 +33,7 @@ public class EqualsTest {
 //        Date d2 = new Date(123323l);
 //        System.out.println(d1.equals(d2));//true
           Customer s1 = new Customer("tom",21);
-          System.out.println(s1.toString());//没重写toString时输出的是地址值
+          System.out.println(s1.toString());//没重写toString时输出的是地址值,重写后就会返回其内容
 
           Date d3 = new Date(21313233l);
           System.out.println(d3.toString());
@@ -55,6 +55,12 @@ static class  Customer{
             this.age = age;
         }
 
+        /**
+         * @author 潘光伟
+         * @date 2022/7/31 7:53 PM
+         * 重写equals
+         */
+
         public boolean equals(Object o){
             //如果两个地址相对就直接返回true
                 if (this == o){
@@ -73,6 +79,14 @@ static class  Customer{
                     }
                 }
                 return false;
+        }
+        /**
+         * @author 潘光伟
+         * @date 2022/7/31 7:54 PM
+         */
+        //重写toString
+        public String toString(){
+            return "["+ name + " " + age + "]";
         }
 }
 }
