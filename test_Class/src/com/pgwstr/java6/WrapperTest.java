@@ -46,4 +46,21 @@ public class WrapperTest {
         System.out.println(b4.toString());
         System.out.println(b5);
     }
+
+    @Test
+    public void test_4(){
+        Integer i1 = new Integer(12);
+        Integer i2 = new Integer(13);
+//        System.out.println(i1 + i2);
+        int a = i1.intValue();
+        int b = i2.intValue();
+        System.out.println(a + b);
+
+
+        Float f1 = new Float(12.4);
+        Float f2 = new Float(22.1);
+        float x = f1.floatValue();
+        float y = f2.floatValue();
+        System.out.println(f1 + f2);
+    }
 }
