@@ -72,4 +72,16 @@ public class WrapperTest {
         float y = f2.floatValue();
         System.out.println(f1 + f2);
     }
+
+    @Test
+    public void test_5(){
+        int i = 10;
+        //第一种通过连接运算来转换
+        String s = i + "";
+        System.out.println(s.toString());
+        //第二种通过valueOf来转换
+        float f = 12.3f;
+        String s2 =  String.valueOf(f);
+        System.out.println(s2);
+    }
 }
