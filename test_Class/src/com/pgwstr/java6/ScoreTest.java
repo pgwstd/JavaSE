@@ -14,9 +14,9 @@ public class ScoreTest {
         Vector v = new Vector();
         int max = 0;
         char level;
-
-        while (true){
-            System.out.println("请输入成绩（以负数代表输入结束）");
+        System.out.println("请输入成绩（以负数代表输入结束）");
+        while (scanner.hasNext()){
+//            System.out.println("请输入成绩（以负数代表输入结束）");
             int score = scanner.nextInt();
             if (score < 0){
                 break;
