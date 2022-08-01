@@ -14,13 +14,17 @@ public class ScoreTest {
         Vector v = new Vector();
         int max = 0;
         char level;
+
         while (true){
             System.out.println("请输入成绩（以负数代表输入结束）");
             int score = scanner.nextInt();
-            if (score < 0 || score > 100){
+            if (score < 0){
                 break;
             }
-
+            if (score > 100){
+                System.out.println("输入有误，请重新输入");
+                continue;
+            }
             v.addElement(score);
             if (max < score){
                 max = score;
