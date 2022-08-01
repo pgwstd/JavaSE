@@ -83,5 +83,9 @@ public class WrapperTest {
         float f = 12.3f;
         String s2 =  String.valueOf(f);
         System.out.println(s2);
+
+        Double d = new Double(12.33);
+        String s3 = String.valueOf(d);
+        System.out.println(s3);
     }
 }
