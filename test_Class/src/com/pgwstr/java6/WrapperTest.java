@@ -33,6 +33,17 @@ public class WrapperTest {
         System.out.println(f2);
         System.out.println(f3.toString());
     }
-
-
+@Test
+    public void test_3(){
+        Boolean b1 = new Boolean(true);
+        Boolean b2 = new Boolean(false);
+        Boolean b3 = new Boolean("true");
+        Boolean b4 = new Boolean("true123");
+        Boolean b5 = new Boolean("TRUE");
+        System.out.println(b1);
+        System.out.println(b2);
+        System.out.println(b3.toString());
+        System.out.println(b4.toString());
+        System.out.println(b5);
+    }
 }
