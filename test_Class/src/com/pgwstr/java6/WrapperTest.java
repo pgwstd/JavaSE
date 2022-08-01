@@ -18,6 +18,15 @@ public class WrapperTest {
         Integer i2 = new Integer("123");
         System.out.println(i2.toString());
 
+        //自动装箱(不用new一个对象)
+        int o = 20;
+        Integer o1 = o;
+        System.out.println(o1.toString());
+
+        //自动拆箱(不用用floatVale来转换)
+        Float g = new Float(24.1);
+        float po = g;
+        System.out.println(po);
 //        Integer i3 = new Integer("123abc");
 //        System.out.println(i3.toString());
     }
