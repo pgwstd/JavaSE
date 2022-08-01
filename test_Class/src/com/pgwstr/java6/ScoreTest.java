@@ -4,9 +4,10 @@ import java.util.Scanner;
 import java.util.Vector;
 
 /**
- * @author 潘光伟
- * @date 2022/8/1 6:22 PM
+ * @author pgwstr
+ * @date 2022/8/1 7:00 PM
  */
+
 
 public class ScoreTest {
     public static void main(String[] args) {
