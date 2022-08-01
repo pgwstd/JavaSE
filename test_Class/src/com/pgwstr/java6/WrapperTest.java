@@ -88,4 +88,15 @@ public class WrapperTest {
         String s3 = String.valueOf(d);
         System.out.println(s3);
     }
+
+    @Test
+    public void test_6(){
+        String i = "123";
+        int n = Integer.parseInt(i);
+        System.out.println(i);
+
+        String b = "true";
+        boolean b2 = Boolean.parseBoolean(b);
+        System.out.println(b2);
+    }
 }
