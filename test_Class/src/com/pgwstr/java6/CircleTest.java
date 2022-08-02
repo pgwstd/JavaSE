@@ -10,17 +10,20 @@ public class CircleTest {
         circle c1 = new circle();
         circle c2 = new circle(3.1);
         System.out.println(c1.findR());
+        System.out.println(c1.getId());
         System.out.println(c2.findR());
+        System.out.println(c2.getId());
         System.out.println(circle.getCout());
     }
   static   class circle{
+        public static int id = 1001;
         private double r;
         private static int cout;
-        private static int num;
+
         public circle(){
             r = 1.0;
+            id = id++;
             cout++;
-            num++;
 
         }
         public circle(double r){
@@ -38,6 +41,10 @@ public class CircleTest {
 
       public static int getCout() {
           return cout;
+      }
+
+      public int getId() {
+          return id;
       }
   }
 }
