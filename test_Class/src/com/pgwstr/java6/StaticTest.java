@@ -8,6 +8,12 @@ import org.junit.jupiter.api.Test;
  */
 
 public class StaticTest {
+
+    @Test
+    public void test_3(){
+        Person.sleep();
+    }
+
     @Test
     public void test_2(){
 
@@ -38,5 +44,9 @@ public class StaticTest {
         String name;
         int age;
         static String site;
+
+        public static void sleep(){
+            System.out.println("睡觉");
+        }
     }
 }
