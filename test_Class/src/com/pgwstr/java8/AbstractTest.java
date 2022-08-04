@@ -31,4 +31,43 @@ public class AbstractTest {
 
         }
     }
+
+
+    //设计模式(单例模式)
+    //饿汉式
+    static class Count {
+        private int age;
+        private double weight;
+        private double height;
+
+        public Count() {
+
+        }
+
+        private static Count instance = new Count();
+
+        public static Count getInstance(){
+            return instance;
+        }
+    }
+
+
+    //懒汉式
+    static class Num{
+        private int age;
+        private double weight;
+        private double height;
+
+        public Num(){
+
+        }
+
+        private static Num instace = null;
+        public static  Num getInstance(){
+            if (instace == null){
+                instace = new Num();
+            }
+            return instace;
+        }
+    }
 }
