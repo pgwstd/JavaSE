@@ -23,6 +23,12 @@ class Singleton {
     }
 
     //write your code here......
+    /**
+     * @author pgwstr
+     * @date 2022/8/4 10:52 PM
+     * 单例模式->饿汉式
+     */
+
     public static Singleton getInstance() {
         if (instance == null) {
             instance = new Singleton();
