@@ -20,6 +20,7 @@ class Singleton {
 
     private Singleton() {
 
+
     }
 
     //write your code here......
