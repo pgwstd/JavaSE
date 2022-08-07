@@ -20,7 +20,8 @@ public class test {
             System.out.println("空指针了");
         }
         catch (NumberFormatException e){
-            System.out.println("转换失败");
+//            System.out.println("转换失败");
+            e.printStackTrace();
         }
         catch (Exception e){
             System.out.println("出现异常了，请解决");
