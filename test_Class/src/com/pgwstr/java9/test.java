@@ -8,6 +8,28 @@ import org.junit.jupiter.api.Test;
  */
 
 public class test {
+
+    @Test
+    public void test_2(){
+        int num = method();
+        System.out.println(num);
+    }
+    public int method(){
+        try {
+            int[] arr = new int[10];
+            System.out.println(arr[10]);
+            return 1;
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
+            return 2;
+        }
+        finally {
+            System.out.println("一定会执行");
+            return 3;
+        }
+    }
+
     @Test
     public void test_1(){
         String str = "123";
