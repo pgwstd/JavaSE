@@ -14,6 +14,7 @@ public class test {
         str = "abc";
         try {
             int n = Integer.parseInt(str);
+            System.out.println("不会出现了，因为上面已经是报错不会再向下执行");
         }
         catch (NumberFormatException e){
             System.out.println("转换失败");
