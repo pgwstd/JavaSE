@@ -19,5 +19,6 @@ public class ThredTest{
     public static void main(String[] args) {
         MyThred m = new MyThred();
         m.start();
+        System.out.println("hello");
     }
 }
