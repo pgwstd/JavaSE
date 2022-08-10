@@ -11,6 +11,27 @@ public class ThredDemo {
 //        even e1 = new even();
 //        o1.start();
 //        e1.start();
+        //匿名子类
+        new Thread(){
+            public void run() {
+                for (int i = 0; i < 100; i++) {
+                    if (i % 2 == 0) {
+                        System.out.println("偶数" + i);
+                    }
+                }
+            }
+        }.start();
+
+
+        new Thread(){
+            public void run() {
+                for (int i = 0; i < 100; i++) {
+                    if (i % 2 != 0) {
+                        System.out.println("奇数" + i);
+                    }
+                }
+            }
+        }.start();
     }
 }
 
@@ -18,8 +39,8 @@ public class ThredDemo {
 class odd extends Thread {
     public void run() {
         for (int i = 0; i < 100; i++) {
-            if (i % 2 == 0) {
-                System.out.println("偶数"+i);
+            if (i % 2 != 0) {
+                System.out.println("奇数"+i);
             }
         }
     }
