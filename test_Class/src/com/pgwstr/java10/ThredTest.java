@@ -19,6 +19,9 @@ public class ThredTest{
     public static void main(String[] args) {
         MyThred m = new MyThred();
         m.start();
-        System.out.println("hello");
+//        System.out.println("hello");
+        for (int i = 0;i < 100;i++){
+                System.out.println(i+"hello");
+            }
     }
 }
