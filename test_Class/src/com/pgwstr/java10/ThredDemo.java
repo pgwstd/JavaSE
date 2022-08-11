@@ -11,6 +11,7 @@ public class ThredDemo {
 //        even e1 = new even();
 //        o1.start();
 //        e1.start();
+
         //匿名子类
         new Thread(){
             public void run() {
