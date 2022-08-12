@@ -22,7 +22,7 @@ public class WindowTest {
 }
 
 class Window extends Thread{
-    private  int ticket = 100;
+    private static int ticket = 100;
 
     public void run() {
         while (true) {
