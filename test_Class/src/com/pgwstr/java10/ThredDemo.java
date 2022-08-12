@@ -58,7 +58,7 @@ class odd extends Thread {
         for (int i = 0; i < 100; i++) {
             if (i % 2 != 0) {
                 try {
-                    sleep(1000);
+                    sleep(1000);    //休眠1秒
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
