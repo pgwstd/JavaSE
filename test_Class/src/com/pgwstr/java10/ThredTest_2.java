@@ -18,7 +18,7 @@ public class ThredTest_2 {
     }
 }
 
-class test extends Thread {
+class test implements Runnable{
     public void run() {
         for (int i = 0; i < 100; i++) {
             if (i % 2 == 0) {
