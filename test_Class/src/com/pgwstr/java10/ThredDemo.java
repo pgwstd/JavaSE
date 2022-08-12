@@ -18,13 +18,13 @@ public class ThredDemo {
                 System.out.println(Thread.currentThread().getName()+":"+i);
                 if (i == 20){
                     try {
-                        o1.join();
+                        o1.join();  //加入某个分线程，执行完后才能执行主线程
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
                 }
             }
-        System.out.println(o1.isAlive());
+        System.out.println(o1.isAlive());  //判断线程是存活
         }
 
         //匿名子类
