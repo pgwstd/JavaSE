@@ -24,6 +24,7 @@ public class ThredDemo {
                     }
                 }
             }
+        System.out.println(o1.isAlive());
         }
 
         //匿名子类
@@ -55,6 +56,11 @@ class odd extends Thread {
     public void run() {
         for (int i = 0; i < 100; i++) {
             if (i % 2 != 0) {
+                try {
+                    sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
                 System.out.println(Thread.currentThread().getName()+":"+i);
             }
             if (i % 20  == 0){
