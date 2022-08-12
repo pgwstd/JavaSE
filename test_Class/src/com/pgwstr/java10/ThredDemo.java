@@ -12,10 +12,17 @@ public class ThredDemo {
         o1.setName("线程一");
         e1.setName("线程二");
         o1.start();
-        e1.start();
+//        e1.start();
         Thread.currentThread().setName("主线程");
         for (int i = 0; i < 100; i++) {
                 System.out.println(Thread.currentThread().getName()+":"+i);
+                if (i == 20){
+                    try {
+                        o1.join();
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
             }
         }
 
@@ -49,6 +56,9 @@ class odd extends Thread {
         for (int i = 0; i < 100; i++) {
             if (i % 2 != 0) {
                 System.out.println(Thread.currentThread().getName()+":"+i);
+            }
+            if (i % 20  == 0){
+                yield();
             }
         }
     }
