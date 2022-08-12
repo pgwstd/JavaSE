@@ -11,6 +11,7 @@ public class ThredDemo {
         even e1 = new even();
         o1.setName("线程一");
         e1.setName("线程二");
+        o1.setPriority(10);
         o1.start();
 //        e1.start();
         Thread.currentThread().setName("主线程");
@@ -61,7 +62,7 @@ class odd extends Thread {
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-                System.out.println(Thread.currentThread().getName()+":"+i);
+                System.out.println(Thread.currentThread().getName()+Thread.currentThread().getPriority()+":"+i);
             }
             if (i % 20  == 0){
                 yield();
