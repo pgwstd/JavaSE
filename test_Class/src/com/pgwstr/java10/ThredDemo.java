@@ -15,7 +15,7 @@ public class ThredDemo {
 //        e1.start();
         Thread.currentThread().setName("主线程");
         for (int i = 0; i < 100; i++) {
-                System.out.println(Thread.currentThread().getName()+":"+i);
+                System.out.println(Thread.currentThread().getName()+Thread.currentThread().getPriority()+":"+i);
                 if (i == 20){
                     try {
                         o1.join();  //加入某个分线程，执行完后才能执行主线程
