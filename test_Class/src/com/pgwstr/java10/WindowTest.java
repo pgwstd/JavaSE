@@ -26,7 +26,7 @@ class Window extends Thread{
     private static Object obj = new Object();
     public void run() {
         while (true) {
-            synchronized (obj) {
+            synchronized (Window.class) {
                 if (ticket > 0) {
                     System.out.println(Thread.currentThread().getName() + "购票成功:" + ticket);
                     ticket--;
