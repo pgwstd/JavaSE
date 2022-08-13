@@ -14,17 +14,17 @@ public class ThredDemo {
         o1.setPriority(10);
         o1.start();
 //        e1.start();
-        Thread.currentThread().setName("主线程");
-        for (int i = 0; i < 100; i++) {
-                System.out.println(Thread.currentThread().getName()+Thread.currentThread().getPriority()+":"+i);
-                if (i == 20){
-                    try {
-                        o1.join();  //加入某个分线程，执行完后才能执行主线程
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                }
-            }
+//        Thread.currentThread().setName("主线程");
+//        for (int i = 0; i < 100; i++) {
+//                System.out.println(Thread.currentThread().getName()+Thread.currentThread().getPriority()+":"+i);
+//                if (i == 20){
+//                    try {
+//                        o1.join();  //加入某个分线程，执行完后才能执行主线程
+//                    } catch (InterruptedException e) {
+//                        throw new RuntimeException(e);
+//                    }
+//                }
+//            }
         System.out.println(o1.isAlive());  //判断线程是存活
         }
 
@@ -64,7 +64,7 @@ class odd extends Thread {
                 }
                 System.out.println(Thread.currentThread().getName()+Thread.currentThread().getPriority()+":"+i);
             }
-            if (i % 20  == 0){
+            if (i % 20  == 0){  //可以除出20的时候释放到，不显示
                 yield();
             }
         }
