@@ -29,6 +29,12 @@ class Wind implements Runnable {
     public void run() {
         while (true) {
             if (ticket > 0) {
+                try {
+                    Thread.sleep(100);
+                }
+                catch (InterruptedException e){
+                    e.printStackTrace();
+                }
                 System.out.println(Thread.currentThread().getName() + "购票成功:" + ticket);
                 ticket--;
             } else {
