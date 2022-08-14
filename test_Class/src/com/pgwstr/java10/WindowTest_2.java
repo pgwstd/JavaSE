@@ -20,6 +20,7 @@ public class WindowTest_2 {
         thread.start();
         thread2.start();
         thread3.start();
+        thread2.stop();
     }
 }
 
