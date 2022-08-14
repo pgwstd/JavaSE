@@ -42,11 +42,12 @@ class Wind implements Runnable {
 //                    break;
 //                }
 //            }
+
             show();
         }
 
     }
-    private synchronized void show(){
+    private  synchronized void show(){
         if (ticket > 0) {
                     try {
                         Thread.sleep(100);
