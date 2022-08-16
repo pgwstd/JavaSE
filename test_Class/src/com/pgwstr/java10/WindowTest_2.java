@@ -23,6 +23,10 @@ public class WindowTest_2 {
         thread2.stop();
     }
 }
+/**
+ * @author pgwstr
+ * @date 2022/8/16 8:39 PM
+ */
 
 class Wind implements Runnable {
     private static int ticket = 100;
