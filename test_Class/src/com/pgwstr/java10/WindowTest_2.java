@@ -25,7 +25,7 @@ public class WindowTest_2 {
 }
 /**
  * @author pgwstr
- * @date 2022/8/16 8:39 PM
+ * @date 2022/8/16 8:40 PM
  */
 
 class Wind implements Runnable {
