@@ -25,7 +25,7 @@ public class WindowTest3 {
 
 /**
  * @author pgwstr
- * @date 2022/8/18 11:16 PM
+ * @date 2022/8/18 11:17 PM
  */
 
 class Window2 extends Thread {
