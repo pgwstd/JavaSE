@@ -21,9 +21,10 @@ public class WindowTest {
     }
 }
 
-class Window extends Thread{
-    private static  int ticket = 100;
+class Window extends Thread {
+    private static int ticket = 100;
     private static Object obj = new Object();
+
     public void run() {
         while (true) {
             synchronized (Window.class) {
