@@ -18,24 +18,25 @@ public class test_8_21 {
         System.out.println(b1.getPrc());
     }
 
-  static   class Book{
-       private  int id;
-       private double prc;
+    static class Book {
+        private int id;
+        private double prc;
 
 
-       public void setId(int id){
-           this.id = id;
-       }
+        public void setId(int id) {
+            this.id = id;
+        }
 
-       public void setPrc(double prc){
-           this.prc = prc;
-       }
-       public int getId(){
-           return id;
-       }
+        public void setPrc(double prc) {
+            this.prc = prc;
+        }
 
-       public double getPrc(){
-           return prc;
-       }
+        public int getId() {
+            return id;
+        }
+
+        public double getPrc() {
+            return prc;
+        }
     }
 }
