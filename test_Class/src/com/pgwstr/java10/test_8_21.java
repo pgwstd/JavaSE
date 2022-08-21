@@ -17,6 +17,10 @@ public class test_8_21 {
         System.out.println(b1.getId());
         System.out.println(b1.getPrc());
     }
+/**
+ * @author pgwstr
+ * @date 2022/8/21 8:24 PM
+ */
 
     static class Book {
         private int id;
