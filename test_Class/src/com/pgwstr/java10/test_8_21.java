@@ -12,10 +12,11 @@ public class test_8_21 {
         Book b1 = new Book();
         b1.setId(12);
         b1.setPrc(1.23);
-
+        b1.set();
 
         System.out.println(b1.getId());
         System.out.println(b1.getPrc());
+
     }
 /**
  * @author pgwstr
@@ -41,6 +42,10 @@ public class test_8_21 {
 
         public double getPrc() {
             return prc;
+        }
+
+        public void set(){
+            System.out.println("你好");
         }
     }
 }
