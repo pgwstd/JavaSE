@@ -18,10 +18,11 @@ public class test_8_21 {
         System.out.println(b1.getPrc());
 
     }
-/**
- * @author pgwstr
- * @date 2022/8/21 8:24 PM
- */
+
+    /**
+     * @author pgwstr
+     * @date 2022/8/21 8:24 PM
+     */
 
     static class Book {
         private int id;
@@ -44,10 +45,11 @@ public class test_8_21 {
             return prc;
         }
 
-        public void set(){
+        public void set() {
             System.out.println("你好");
         }
-        public void sellp(){
+
+        public void sellp() {
             System.out.println("睡觉");
         }
     }
