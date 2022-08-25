@@ -49,8 +49,6 @@ public class test_8_21 {
             System.out.println("你好");
         }
 
-        public void sellp() {
-            System.out.println("睡觉");
-        }
+        public void sellp() { System.out.println("睡觉"); }
     }
 }
