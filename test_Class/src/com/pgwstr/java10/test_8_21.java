@@ -13,7 +13,7 @@ public class test_8_21 {
         b1.setId(12);
         b1.setPrc(1.23);
         b1.set();
-
+        b1.sellp();
         System.out.println(b1.getId());
         System.out.println(b1.getPrc());
 
