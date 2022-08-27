@@ -55,5 +55,6 @@ public class test_8_21 {
         public void tale(){
             System.out.println("说话");
         }
+
     }
 }
