@@ -14,6 +14,7 @@ public class test_8_21 {
         b1.setPrc(1.23);
         b1.set();
         b1.sellp();
+        b1.tale();
         System.out.println(b1.getId());
         System.out.println(b1.getPrc());
 
@@ -50,5 +51,9 @@ public class test_8_21 {
         }
 
         public void sellp() { System.out.println("睡觉"); }
+
+        public void tale(){
+            System.out.println("说话");
+        }
     }
 }
