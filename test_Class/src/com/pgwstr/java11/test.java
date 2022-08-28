@@ -9,8 +9,20 @@ public class test {
     public static void main(String[] args) {
 
     }
-    class bank{
 
+    static class bank {
+        private bank() {
+        }
 
+        private static bank instance = null;
+
+        public static bank getInstance() {
+            synchronized (bank.class) {
+                if (instance == null) {
+                    instance = new bank();
+                }
+                return instance;
+            }
+        }
     }
 }
