@@ -8,7 +8,6 @@ package com.pgwstr.java10;
 public class test_8_21 {
     public static void main(String[] args) {
 //        System.out.println("123");
-
         Book b1 = new Book();
         b1.setId(12);
         b1.setPrc(1.23);
