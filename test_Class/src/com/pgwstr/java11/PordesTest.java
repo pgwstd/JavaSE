@@ -3,8 +3,8 @@ package com.pgwstr.java11;
 /**
  * @author pgwstr
  * @date 2022/8/31 20:45
+ * 店员
  */
-//店员
 class Clerk {
 
     private int producCont = 0;
@@ -33,8 +33,8 @@ class Clerk {
 /**
  * @author pgwstr
  * @date 2022/8/31 20:48
+ * 生产者
  */
-//生产者
 class Producer extends Thread {
     private Clerk clerk;
 
@@ -58,8 +58,8 @@ class Producer extends Thread {
 /**
  * @author pgwstr
  * @date 2022/8/31 20:48
+ * 消费者
  */
-//消费者
 class Consumer extends Thread {
     private Clerk clerk;
 
