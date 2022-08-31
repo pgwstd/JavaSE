@@ -5,27 +5,38 @@ package com.pgwstr.java11;
  * @date 2022/8/31 20:45
  * 店员
  */
-class Clerk {
+class  Clerk {
 
     private int producCont = 0;
 
     //生产产品
-    public void produceProduct() {
+    public synchronized void produceProduct() {
         if (producCont < 20) {
             producCont++;
             System.out.println(Thread.currentThread().getName() + ":开始生产第" + producCont + "个产品");
         } else {
             //等待
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+
         }
     }
 
     //消费产品
-    public void consumeProduct() {
+    public synchronized void consumeProduct() {
         if (producCont > 0) {
             System.out.println(Thread.currentThread().getName() + ":开始消费第" + producCont + "个产品");
             producCont--;
         } else {
             //等待
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
@@ -35,7 +46,7 @@ class Clerk {
  * @date 2022/8/31 20:48
  * 生产者
  */
-class Producer extends Thread {
+ class Producer extends Thread {
     private Clerk clerk;
 
     public Producer(Clerk clerk) {
@@ -44,13 +55,14 @@ class Producer extends Thread {
 
     public void run() {
         System.out.println(Thread.currentThread().getName() + ":开始生产");
+        notify();
         while (true) {
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            clerk.produceProduct();
+            clerk.produceProduct(); //调用生产方法
         }
     }
 }
@@ -69,18 +81,19 @@ class Consumer extends Thread {
 
     public void run() {
         System.out.println(Thread.currentThread().getName() + ":开始消费");
+        notify();
         while (true) {
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            clerk.consumeProduct();
+            clerk.consumeProduct(); //调用消费方法
         }
     }
 
-    public class PordesTest {
-        public void main(String[] args) {
+    public  class PordesTest {
+        public  void main(String[] args) {
             Clerk clerk = new Clerk();
             Producer p1 = new Producer(clerk);//生产者
             p1.setName("生产者");
