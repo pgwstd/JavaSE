@@ -4,6 +4,7 @@ package com.pgwstr.java11;
  * @author pgwstr
  * @date 2022/8/31 20:45
  */
+//店员
 class Clerk{
 
 }
@@ -35,6 +36,12 @@ class Consumer extends Thread{
 }
 public class PordesTest {
     public static void main(String[] args) {
+        Clerk clerk = new Clerk();
+        Producer p1 = new Producer(clerk);//生产者
+        p1.setName("生产者");
+
+        Consumer c1 = new Consumer(clerk);//消费者
+        c1.setName("消费者");
 
     }
 }
