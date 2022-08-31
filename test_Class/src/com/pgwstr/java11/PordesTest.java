@@ -88,7 +88,6 @@ class Consumer extends Thread {
             Consumer c1 = new Consumer(clerk);//消费者
             c1.setName("消费者");
 
-
             p1.start();
             c1.start();
         }
