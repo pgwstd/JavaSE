@@ -15,7 +15,7 @@ class Clerk {
             producCont++;
             System.out.println(Thread.currentThread().getName() + ":开始生产第" + producCont + "产品");
         } else {
-
+            //等待
         }
     }
 
@@ -25,7 +25,7 @@ class Clerk {
             System.out.println(Thread.currentThread().getName() + ":开始消费第" + producCont + "产品");
             producCont--;
         } else {
-
+            //等待
         }
     }
 }
