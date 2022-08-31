@@ -80,7 +80,7 @@ class Consumer extends Thread {
     }
 
     public class PordesTest {
-        public static void main(String[] args) {
+        public  void main(String[] args) {
             Clerk clerk = new Clerk();
             Producer p1 = new Producer(clerk);//生产者
             p1.setName("生产者");
