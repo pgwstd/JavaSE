@@ -34,7 +34,7 @@ public class numTest {
                      * @date 2022/8/31 20:12
                      * 唤醒该线程
                      */
-                    notify();
+                    obj.notify();
                     if (number <= 100) {
                         try {
                             Thread.sleep(100);
@@ -50,7 +50,7 @@ public class numTest {
                          * 阻塞该线程
                          */
                         try {
-                            wait();
+                            obj.wait();
                         } catch (InterruptedException e) {
                             throw new RuntimeException(e);
                         }
