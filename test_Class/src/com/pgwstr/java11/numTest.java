@@ -18,6 +18,7 @@ public class numTest {
         public void run() {
             while (true) {
                 synchronized (this) {
+                    notify();
                     if (number <= 100) {
                         try {
                             Thread.sleep(100);
@@ -26,6 +27,12 @@ public class numTest {
                         }
                         System.out.println(Thread.currentThread().getName() + ":" + number);
                         number++;
+
+                        try {
+                            wait();
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
                     } else {
                         break;
                     }
