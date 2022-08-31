@@ -18,6 +18,12 @@ public class numTest {
         public void run() {
             while (true) {
                 synchronized (this) {
+
+                    /**
+                     * @author pgwstr
+                     * @date 2022/8/31 20:12
+                     * 唤醒该线程
+                     */
                     notify();
                     if (number <= 100) {
                         try {
@@ -28,6 +34,11 @@ public class numTest {
                         System.out.println(Thread.currentThread().getName() + ":" + number);
                         number++;
 
+                        /**
+                         * @author pgwstr
+                         * @date 2022/8/31 20:11
+                         * 阻塞该线程
+                         */
                         try {
                             wait();
                         } catch (InterruptedException e) {
