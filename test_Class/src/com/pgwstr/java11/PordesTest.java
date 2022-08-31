@@ -7,6 +7,29 @@ package com.pgwstr.java11;
 //店员
 class Clerk{
 
+    private int producCont = 0;
+
+    //生产产品
+    public void produceProduct() {
+        if (producCont < 20){
+            producCont++;
+            System.out.println(Thread.currentThread().getName()+":开始生产第"+producCont+"产品");
+        }
+        else {
+
+        }
+    }
+
+    //消费产品
+    public void consumeProduct() {
+        if (producCont > 0){
+            System.out.println(Thread.currentThread().getName()+":开始消费第"+producCont+"产品");
+            producCont--;
+        }
+        else {
+
+        }
+    }
 }
 
 /**
@@ -20,6 +43,17 @@ class Producer extends Thread {
     public Producer(Clerk clerk) {
         this.clerk = clerk;
     }
+    public  void run(){
+        System.out.println(Thread.currentThread().getName()+":开始生产");
+        while (true){
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            clerk.produceProduct();
+        }
+    }
 }
 
 /**
@@ -32,6 +66,17 @@ class Consumer extends Thread{
 
     public Consumer(Clerk clerk) {
         this.clerk = clerk;
+    }
+    
+    public void run(){
+    System.out.println(Thread.currentThread().getName()+":开始消费");
+        while (true){
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        clerk.consumeProduct();
     }
 }
 public class PordesTest {
