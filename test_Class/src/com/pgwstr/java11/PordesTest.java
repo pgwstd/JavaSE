@@ -13,7 +13,7 @@ class Clerk {
     public void produceProduct() {
         if (producCont < 20) {
             producCont++;
-            System.out.println(Thread.currentThread().getName() + ":开始生产第" + producCont + "产品");
+            System.out.println(Thread.currentThread().getName() + ":开始生产第" + producCont + "个产品");
         } else {
             //等待
         }
@@ -22,7 +22,7 @@ class Clerk {
     //消费产品
     public void consumeProduct() {
         if (producCont > 0) {
-            System.out.println(Thread.currentThread().getName() + ":开始消费第" + producCont + "产品");
+            System.out.println(Thread.currentThread().getName() + ":开始消费第" + producCont + "个产品");
             producCont--;
         } else {
             //等待
