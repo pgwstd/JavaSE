@@ -7,11 +7,21 @@ package com.pgwstr.java11;
 
 public class numTest {
     public static void main(String[] args) {
-        Number n1 = new Number();
-        Number n2 = new Number();
+       Number number = new Number();
+       Thread t1 = new Thread(number);
+       Thread t2 = new Thread(number);
+
+
+       t1.setName("主线程");
+       t2.setName("副线程");
+
+       t1.start();
+       t2.start();
+
+
     }
 
-    class Number implements Runnable {
+   static class Number implements Runnable {
         private int number = 1;
 
 
