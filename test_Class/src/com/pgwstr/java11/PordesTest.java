@@ -5,29 +5,29 @@ package com.pgwstr.java11;
  * @date 2022/8/31 20:45
  */
 //店员
-class Clerk {
+class Clerk{
 
     private int producCont = 0;
 
     //生产产品
     public void produceProduct() {
-        if (producCont < 20) {
+        if (producCont < 20){
             producCont++;
-            System.out.println(Thread.currentThread().getName() + ":开始生产第" + producCont + "产品");
-        } else {
-            //等待
-//            wait();
+            System.out.println(Thread.currentThread().getName()+":开始生产第"+producCont+"产品");
+        }
+        else {
+
         }
     }
 
     //消费产品
     public void consumeProduct() {
-        if (producCont > 0) {
-            System.out.println(Thread.currentThread().getName() + ":开始消费第" + producCont + "产品");
+        if (producCont > 0){
+            System.out.println(Thread.currentThread().getName()+":开始消费第"+producCont+"产品");
             producCont--;
-        } else {
-            //等待
-//            wait();
+        }
+        else {
+
         }
     }
 }
@@ -43,10 +43,9 @@ class Producer extends Thread {
     public Producer(Clerk clerk) {
         this.clerk = clerk;
     }
-
-    public void run() {
-        System.out.println(Thread.currentThread().getName() + ":开始生产");
-        while (true) {
+    public  void run(){
+        System.out.println(Thread.currentThread().getName()+":开始生产");
+        while (true){
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
