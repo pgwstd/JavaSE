@@ -23,11 +23,11 @@ public class numTest {
 
    static class Number implements Runnable {
         private int number = 1;
-
+        private Object obj = new Object();
 
         public void run() {
             while (true) {
-                synchronized (this) {
+                synchronized (obj) {
 
                     /**
                      * @author pgwstr
