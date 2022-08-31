@@ -85,8 +85,10 @@ class Consumer extends Thread {
             Producer p1 = new Producer(clerk);//生产者
             p1.setName("生产者");
 
+
             Consumer c1 = new Consumer(clerk);//消费者
             c1.setName("消费者");
+
 
             p1.start();
             c1.start();
