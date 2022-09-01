@@ -5,7 +5,7 @@ package com.pgwstr.java11;
  * @date 2022/8/31 20:45
  * 店员
  */
-class  Clerk {
+class Clerk {
 
     private int producCont = 0;
 
@@ -46,7 +46,7 @@ class  Clerk {
  * @date 2022/8/31 20:48
  * 生产者
  */
- class Producer extends Thread {
+class Producer extends Thread {
     private Clerk clerk;
 
     public Producer(Clerk clerk) {
@@ -92,8 +92,8 @@ class Consumer extends Thread {
         }
     }
 
-    public  class PordesTest {
-        public  void main(String[] args) {
+    public class PordesTest {
+        public void main(String[] args) {
             Clerk clerk = new Clerk();
             Producer p1 = new Producer(clerk);//生产者
             p1.setName("生产者");
