@@ -1,6 +1,8 @@
 package com.pgwstr.java11;
 
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.FutureTask;
 
 /**
  * @author pgwstr
@@ -27,6 +29,14 @@ class NumThread implements Callable {
 public class CallableTest {
     public static void main(String[] args) {
         NumThread numThread = new NumThread();
-
+        FutureTask futureTask = new FutureTask(numThread);
+        try {
+            Object sum = futureTask.get();
+            System.out.println(sum);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        } catch (ExecutionException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
