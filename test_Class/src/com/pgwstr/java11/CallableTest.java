@@ -35,7 +35,7 @@ public class CallableTest {
 
         try {
             Object sum = futureTask.get();
-            System.out.println(sum);
+            System.out.println("一百以内偶数的和为:"+sum);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         } catch (ExecutionException e) {
