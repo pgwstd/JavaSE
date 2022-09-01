@@ -26,6 +26,7 @@ class NumThread implements Callable {
 
 public class CallableTest {
     public static void main(String[] args) {
+        NumThread numThread = new NumThread();
 
     }
 }
