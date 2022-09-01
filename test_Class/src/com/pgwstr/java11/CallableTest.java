@@ -30,6 +30,9 @@ public class CallableTest {
     public static void main(String[] args) {
         NumThread numThread = new NumThread();
         FutureTask futureTask = new FutureTask(numThread);
+
+        new Thread(futureTask).start();
+
         try {
             Object sum = futureTask.get();
             System.out.println(sum);
