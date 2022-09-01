@@ -20,5 +20,6 @@ public class ThreadPool {
     public static void main(String[] args) {
         ExecutorService service = Executors.newFixedThreadPool(10);
         service.execute(new Num());
+        service.shutdown();
     }
 }
