@@ -23,5 +23,6 @@ public class StringTest {
         String s3 = "abc";
         s3 += "def";
         System.out.println(s3);
+        System.out.println(s2);
     }
 }
