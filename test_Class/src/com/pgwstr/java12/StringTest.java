@@ -42,6 +42,11 @@ public class StringTest {
         System.out.println(s1 == s3);
         System.out.println(s1 == s4);
 
+        System.out.println("*************");
+        Per p1 = new Per("tom",21);
+        Per p2 = new Per("tom",21);
+        System.out.println(p1 == p2);
+        System.out.println(p1.name.equals(p2.name));
 
     }
 }
