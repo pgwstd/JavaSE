@@ -49,4 +49,21 @@ public class StringTest {
         System.out.println(p1.name.equals(p2.name));
 
     }
+
+    @Test
+    public void test3(){
+        String s1 = "javaee";
+        String s2 = "hhh";
+
+        String s3 = "javaeehhh";
+        String s4 = "javaee" + "hhh";
+        String s5 = s1 + "hhh";
+        String s6 = "javaee" + s2;
+
+        System.out.println(s3 == s4);
+        System.out.println(s3 == s5);
+        System.out.println(s3 == s6);
+        System.out.println(s5 == s6);
+
+    }
 }
