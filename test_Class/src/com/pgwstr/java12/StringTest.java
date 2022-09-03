@@ -68,4 +68,9 @@ public class StringTest {
         String s7 = s5.intern();
         System.out.println(s7 == s3);
     }
+
+    @Test
+    public void test4(){
+
+    }
 }
