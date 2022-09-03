@@ -29,4 +29,17 @@ public class StringTest {
         System.out.println("*************");
 
     }
+    @Test
+    public void test2(){
+        String s1 = "javaee";
+        String s2 = "javaee";
+
+        String s3 = new String("javaee");
+        String s4 = new String("javaee");
+
+        System.out.println(s1 == s2);
+        System.out.println(s3 == s4);
+
+
+    }
 }
