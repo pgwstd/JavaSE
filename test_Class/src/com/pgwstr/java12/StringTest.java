@@ -65,5 +65,7 @@ public class StringTest {
         System.out.println(s3 == s6);
         System.out.println(s5 == s6);
 
+        String s7 = s5.intern();
+        System.out.println(s7 == s3);
     }
 }
