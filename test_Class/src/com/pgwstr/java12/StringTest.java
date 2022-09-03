@@ -19,5 +19,9 @@ public class StringTest {
         System.out.println(s1 == s2);
         System.out.println(s1);
         System.out.println(s2);
+        System.out.println("*************");
+        String s3 = "abc";
+        s3 += "def";
+        System.out.println(s3);
     }
 }
