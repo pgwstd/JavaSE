@@ -2,7 +2,7 @@ package com.pgwstr.java12;
 
 /**
  * @author pgwstr
- * @date 2022/9/4 10:10
+ * @date 2022/9/4 10:10R
  */
 
 public class LenthTest {
@@ -18,9 +18,9 @@ public class LenthTest {
         System.out.println(str2);   //在方法区新建的字符
 
         String str3 = " he llo wor ld ";
-        String str4 = str3.intern();    //去除头尾的空格
-        System.out.println(str3);
-        System.out.println(str4);
+        String str4 = str3.trim();    //去除头尾的空格
+        System.out.println("-------"+str3+"-------");
+        System.out.println("-------"+str4+"-------");
 
     }
 }
