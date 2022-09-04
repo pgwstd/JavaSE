@@ -12,6 +12,7 @@ public class LenthTest {
         System.out.println(str.charAt(0));
         System.out.println(str.charAt(9));
         System.out.println(str.isEmpty());
+
         String str2 = str.toLowerCase();
         System.out.println(str);
         System.out.println(str2);
