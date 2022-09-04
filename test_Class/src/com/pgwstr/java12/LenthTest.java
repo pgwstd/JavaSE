@@ -101,15 +101,16 @@ public class LenthTest {
         //String 与 char  转换
         String s1 = "abc123";
         char[] c1 = s1.toCharArray();
-        for (int i = 0;i < c1.length;i++){
+        for (int i = 0; i < c1.length; i++) {
             System.out.println(c1[i]);
         }
-        char[] arr = new char[]{'h','e','l','l','o'};
+        char[] arr = new char[]{'h', 'e', 'l', 'l', 'o'};
         String s2 = new String(arr);
         System.out.println(s2);
     }
+
     @Test
-    public void test7(){
+    public void test7() {
         //string 与 byte的转换
         String s1 = "abcdsafasdasdasd";
         byte[] bytes = s1.getBytes();
@@ -117,6 +118,15 @@ public class LenthTest {
         String s = new String(bytes);
         System.out.println(s);
 
+
+    }
+    @Test
+    public void test8(){
+        String s1 = "javaee";
+        String s2 = "ee";
+        final String s3 = "java";
+        String s4 = s3 + "ee";//常量
+        System.out.println(s1 == s4);
 
     }
 }
