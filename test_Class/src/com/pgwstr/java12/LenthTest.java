@@ -16,5 +16,11 @@ public class LenthTest {
         String str2 = str.toLowerCase();
         System.out.println(str);    //还是原来的字符
         System.out.println(str2);   //在方法区新建的字符
+
+        String str3 = " he llo wor ld ";
+        String str4 = str3.intern();    //去除头尾的空格
+        System.out.println(str3);
+        System.out.println(str4);
+
     }
 }
