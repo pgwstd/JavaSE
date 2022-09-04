@@ -58,7 +58,8 @@ public class LenthTest {
         boolean he = s1.startsWith("he");   //看是否是某个字符开始的
         System.out.println(he);
 
-
+        boolean ll = s1.startsWith("ll", 2);    //看某个字符是不是从指定索引号开始的
+        System.out.println(ll);
 
 
     }
