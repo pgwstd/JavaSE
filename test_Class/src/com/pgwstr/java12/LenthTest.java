@@ -93,4 +93,11 @@ public class LenthTest {
         System.out.println(s1);
 
     }
+
+    @Test
+    public void test6() {
+        //String 与 char  转换
+        String s1 = "abc123";
+
+    }
 }
