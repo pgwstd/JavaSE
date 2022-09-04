@@ -120,13 +120,19 @@ public class LenthTest {
 
 
     }
+
     @Test
-    public void test8(){
+    public void test8() {
         String s1 = "javaee";
         String s2 = "ee";
         final String s3 = "java";
         String s4 = s3 + "ee";//final修饰过，所以是常量
         System.out.println(s1 == s4);
+
+    }
+
+    @Test
+    public void test9() {
 
     }
 }
