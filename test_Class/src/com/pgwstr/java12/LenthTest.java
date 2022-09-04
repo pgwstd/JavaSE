@@ -2,6 +2,8 @@ package com.pgwstr.java12;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 /**
  * @author pgwstr
  * @date 2022/9/4 10:10R
@@ -102,5 +104,15 @@ public class LenthTest {
         for (int i = 0;i < c1.length;i++){
             System.out.println(c1[i]);
         }
+        char[] arr = new char[]{'h','e','l','l','o'};
+        String s2 = new String(arr);
+        System.out.println(s2);
+    }
+    @Test
+    public void test7(){
+        //string 与 byte的转换
+        String s1 = "abcdsafasdasdasd";
+        byte[] bytes = s1.getBytes();
+        System.out.println(Arrays.toString(bytes));
     }
 }
