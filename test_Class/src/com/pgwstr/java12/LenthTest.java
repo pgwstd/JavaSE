@@ -46,6 +46,20 @@ public class LenthTest {
         String s9 = s8.substring(2);    //从哪个位置开始截断字符串
         System.out.println(s8);
         System.out.println(s9);
+        String s10 = s8.substring(2,5);
+        System.out.println(s10);
+    }
+    @Test
+    public void test3(){
+        String s1 = "helloworld";
+        boolean ld = s1.endsWith("ld");  //看是来否是某个字符结尾的
+        System.out.println(ld);
+
+        boolean he = s1.startsWith("he");   //看是否是某个字符开始的
+        System.out.println(he);
+
+
+
 
     }
 }
