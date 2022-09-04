@@ -114,5 +114,7 @@ public class LenthTest {
         String s1 = "abcdsafasdasdasd";
         byte[] bytes = s1.getBytes();
         System.out.println(Arrays.toString(bytes));
+        String s = new String(bytes);
+        System.out.println(s);
     }
 }
