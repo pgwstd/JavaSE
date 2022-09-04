@@ -98,6 +98,9 @@ public class LenthTest {
     public void test6() {
         //String 与 char  转换
         String s1 = "abc123";
-
+        char[] c1 = s1.toCharArray();
+        for (int i = 0;i < c1.length;i++){
+            System.out.println(c1[i]);
+        }
     }
 }
