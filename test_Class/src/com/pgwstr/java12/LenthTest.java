@@ -133,6 +133,9 @@ public class LenthTest {
 
     @Test
     public void test9() {
-
+        //String、StringBuffer与StringBuilder区别
+        StringBuffer s1 = new StringBuffer("abc");
+        s1.setCharAt(0,'b');
+        System.out.println(s1);
     }
 }
