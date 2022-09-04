@@ -28,6 +28,14 @@ public class LenthTest {
     }
     @Test
     public void test2(){
+        String s1 = "HelloWorld";
+        String s2 = "helloworld";
+        System.out.println(s1.equals(s2));  //比较是否一样
+        System.out.println(s1.equalsIgnoreCase(s2));    //忽略大小写比较是否一样
+        String s3 = "abc";
+        String s4 = s3.concat("def");   //追加字符串
+        System.out.println(s4);
+
 
     }
 }
