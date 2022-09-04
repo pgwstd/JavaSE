@@ -39,7 +39,13 @@ public class LenthTest {
         String s5 = "abc";
         String s6 = new String("adc");
         String s7 = "adc";
-        System.out.println(s5.compareTo(s7));
+        System.out.println(s5.compareTo(s7));   //比较两个字符串的大小（第一个减去第二个）
         System.out.println(s5.compareTo(s6));
+
+        String s8 = "abcdefg";
+        String s9 = s8.substring(2);    //从哪个位置开始截断字符串
+        System.out.println(s8);
+        System.out.println(s9);
+
     }
 }
