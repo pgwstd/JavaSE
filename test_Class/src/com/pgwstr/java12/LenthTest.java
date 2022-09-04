@@ -75,6 +75,9 @@ public class LenthTest {
         System.out.println(s2);
 
         System.out.println("**********");
+        String s3 = "12hello34world5javaee7889mysql";
+        String st = s3.replaceAll("\\d+", ",").replaceAll("^,|,$","");
+        System.out.println(st);
 
     }
 }
