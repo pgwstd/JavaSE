@@ -26,4 +26,8 @@ public class LenthTest {
         System.out.println("-------" + str4 + "-------");
 
     }
+    @Test
+    public void test2(){
+
+    }
 }
