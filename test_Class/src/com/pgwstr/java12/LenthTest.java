@@ -36,6 +36,10 @@ public class LenthTest {
         String s4 = s3.concat("def");   //追加字符串
         System.out.println(s4);
 
-
+        String s5 = "abc";
+        String s6 = new String("adc");
+        String s7 = "adc";
+        System.out.println(s5.compareTo(s7));
+        System.out.println(s5.compareTo(s6));
     }
 }
