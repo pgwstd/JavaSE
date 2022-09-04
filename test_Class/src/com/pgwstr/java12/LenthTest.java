@@ -61,6 +61,10 @@ public class LenthTest {
         boolean ll = s1.startsWith("ll", 2);    //看某个字符是不是从指定索引号开始的
         System.out.println(ll);
 
+        int lo = s1.indexOf("lo");
+        int lo1 = s1.lastIndexOf("lo");
+        System.out.println(lo);
+        System.out.println(lo1);
 
     }
 }
