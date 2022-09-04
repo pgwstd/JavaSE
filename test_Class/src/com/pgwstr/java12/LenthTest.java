@@ -69,7 +69,7 @@ public class LenthTest {
     }
     @Test
     public void test4(){
-        String s1 = "abcdef";
+        String s1 = "abcadef";
         String s2 = s1.replace("a", "b");//替换某个字符
         System.out.println(s1);
         System.out.println(s2);
