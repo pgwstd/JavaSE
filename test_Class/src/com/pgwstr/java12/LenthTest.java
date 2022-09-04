@@ -26,8 +26,9 @@ public class LenthTest {
         System.out.println("-------" + str4 + "-------");
 
     }
+
     @Test
-    public void test2(){
+    public void test2() {
         String s1 = "HelloWorld";
         String s2 = "helloworld";
         System.out.println(s1.equals(s2));  //比较是否一样
@@ -46,11 +47,12 @@ public class LenthTest {
         String s9 = s8.substring(2);    //从哪个位置开始截断字符串
         System.out.println(s8);
         System.out.println(s9);
-        String s10 = s8.substring(2,5);
+        String s10 = s8.substring(2, 5);
         System.out.println(s10);
     }
+
     @Test
-    public void test3(){
+    public void test3() {
         String s1 = "helloworld";
         boolean ld = s1.endsWith("ld");  //看是来否是某个字符结尾的
         System.out.println(ld);
@@ -67,8 +69,9 @@ public class LenthTest {
         System.out.println(lo1);
 
     }
+
     @Test
-    public void test4(){
+    public void test4() {
         String s1 = "abcadef";
         String s2 = s1.replace("a", "b");//替换某个字符(全部替代)
         System.out.println(s1);
@@ -76,8 +79,18 @@ public class LenthTest {
 
         System.out.println("**********");
         String s3 = "12hello34world5javaee7889mysql";
-        String st = s3.replaceAll("\\d+", ",").replaceAll("^,|,$","");
+        String st = s3.replaceAll("\\d+", ",").replaceAll("^,|,$", "");
         System.out.println(st);
+    }
+
+    @Test
+    public void test5() {
+        String s = "123";
+        int num = 123;
+        int i = Integer.parseInt(s);
+        String s1 = String.valueOf(num);
+        System.out.println(i);
+        System.out.println(s1);
 
     }
 }
