@@ -14,7 +14,7 @@ public class LenthTest {
         System.out.println(str.isEmpty());
 
         String str2 = str.toLowerCase();
-        System.out.println(str);
-        System.out.println(str2);
+        System.out.println(str);    //还是原来的字符
+        System.out.println(str2);   //在方法区新建的字符
     }
 }
