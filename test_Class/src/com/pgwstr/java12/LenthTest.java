@@ -1,12 +1,15 @@
 package com.pgwstr.java12;
 
+import org.junit.jupiter.api.Test;
+
 /**
  * @author pgwstr
  * @date 2022/9/4 10:10R
  */
 
 public class LenthTest {
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         String str = "HelloWorld";
         System.out.println(str.length()); //长度
         System.out.println(str.charAt(0));
@@ -19,8 +22,8 @@ public class LenthTest {
 
         String str3 = " he llo wor ld ";
         String str4 = str3.trim();    //去除头尾的空格
-        System.out.println("-------"+str3+"-------");
-        System.out.println("-------"+str4+"-------");
+        System.out.println("-------" + str3 + "-------");
+        System.out.println("-------" + str4 + "-------");
 
     }
 }
