@@ -43,5 +43,8 @@ public class BufferBuilder {
         System.out.println(date1.toString());//显示年月日
         System.out.println(date1.getTime());//毫秒时
 
+        Date date2 = new Date(1662381322243L);
+        System.out.println(date2.toString());
+
     }
 }
