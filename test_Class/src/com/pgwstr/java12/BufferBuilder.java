@@ -28,4 +28,8 @@ public class BufferBuilder {
         System.out.println(s1); //从哪到哪删除字符
         System.out.println(s1.length());
     }
+    @Test
+    public void test2(){
+
+    }
 }
