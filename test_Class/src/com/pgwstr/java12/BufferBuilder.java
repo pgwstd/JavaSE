@@ -30,6 +30,7 @@ public class BufferBuilder {
     }
     @Test
     public void test2(){
-
+        long time = System.currentTimeMillis();
+        System.out.println(time);
     }
 }
