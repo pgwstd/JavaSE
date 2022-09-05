@@ -22,6 +22,8 @@ public class BufferBuilder {
         System.out.println(s1);
         s1.insert(2,false); //从哪插入字符
         System.out.println(s1);
+        s1.replace(2,4,"hw");   //从哪到哪替换字符
+        System.out.println(s1);
 
     }
 }
