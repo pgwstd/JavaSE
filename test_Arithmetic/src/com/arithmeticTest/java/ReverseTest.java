@@ -13,6 +13,9 @@ public class ReverseTest {
 
         StringTest s1 = new StringTest();
         String str = s1.recerse("abcdf", 2, 4);
+        String str2 = "qwerty";
+        String str3 = s1.recerse(str2, 2, 4);
+        System.out.println(str3);
         System.out.println(str);
     }
 /**
