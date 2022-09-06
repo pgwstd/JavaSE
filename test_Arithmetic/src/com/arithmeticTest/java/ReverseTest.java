@@ -26,6 +26,13 @@ public class ReverseTest {
         System.out.println(s1.recerse1(str, 2, 4));
     }
 
+    @Test
+    public void test3() {
+        String str = "helloworld";
+        StringTest s1 = new StringTest();
+        System.out.println(s1.recerse2(str, 2, 4));
+    }
+
     /**
      * @author pgwstr
      * @date 2022/9/6 14:29
