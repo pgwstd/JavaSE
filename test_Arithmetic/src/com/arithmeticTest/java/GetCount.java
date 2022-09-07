@@ -25,10 +25,21 @@ public class GetCount {
             int count = 0;//新建计数器
             int index = 0;//新建开始找的位置
             if (strLength >= findLength) {//判断原字符的长度是否大于等于被查找的字符的长度，如果不是则返回0
+                /**
+                 * @author pgwstr
+                 * @date 2022/9/7 21:46
+                 * 方式一
+                 */
+
                 while ((index = str.indexOf(find)) != -1) {//循环，如果查找到了,就把查找到的位置号给index，如果没有查找到就等于-1
                     count++;//计算器每次增加1
                     str = str.substring(index + findLength);//如果查找到了,就把查找到的位置号给str并且加上这个查找字符的长度，让它下次查找从这个新的str开始
                 }
+                /**
+                 * @author pgwstr
+                 * @date 2022/9/7 21:46
+                 * 方式二
+                 */
                 return count;//返回出现的次数
             } else {
                 return 0;
