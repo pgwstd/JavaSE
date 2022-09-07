@@ -11,12 +11,28 @@ import org.junit.Test;
 public class GetCount {
     @Test
     public void test() {
-
+        StrDemo s1 = new StrDemo();
+        String str = "abdffdfdfdgqabfdfab";
+        String find = "ab";
+        int cont = s1.getCont(str, find);
+        System.out.println(cont);
     }
-   class StrDemo{
-        public int getCont(String str,String find){
 
-            return 1;
+    class StrDemo {
+        public int getCont(String str, String find) {
+            int strLength = str.length();//获取str的长度
+            int findLength = find.length();//获取find的长度
+            int count = 0;//新建计数器
+            int index = 0;//新建开始找的位置
+            if (strLength >= findLength) {
+                while ((index = str.indexOf(find)) != -1) {
+                    count++;
+                    str = str.substring(index + findLength);
+                }
+                return count;
+            } else {
+                return 0;
+            }
         }
-   }
+    }
 }
