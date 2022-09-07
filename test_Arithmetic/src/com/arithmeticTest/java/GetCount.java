@@ -25,7 +25,7 @@ public class GetCount {
             int count = 0;//新建计数器
             int index = 0;//新建开始找的位置
             if (strLength >= findLength) {//判断原字符的长度是否大于等于被查找的字符的长度，如果不是则返回0
-                while ((index = str.indexOf(find)) != -1) {
+                while ((index = str.indexOf(find)) != -1) {//
                     count++;
                     str = str.substring(index + findLength);
                 }
