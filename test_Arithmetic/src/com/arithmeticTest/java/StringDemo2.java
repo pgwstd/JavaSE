@@ -15,7 +15,11 @@ public class StringDemo2 {
     }
 
     class MaxStr{
+        public String MaxString(String str,String str2){
 
+
+            return null;
+        }
     }
 
 }
