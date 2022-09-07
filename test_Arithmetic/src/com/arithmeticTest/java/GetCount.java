@@ -18,6 +18,15 @@ public class GetCount {
         System.out.println(cont);
     }
 
+    @Test
+    public void test2(){
+        StrDemo s1 = new StrDemo();
+        String str = "abdffdfdfdgqabfdfab";
+        String find = "ab";
+        int cont = s1.getCont(str, find);
+        System.out.println(cont);
+    }
+
     class StrDemo {
         public int getCont(String str, String find) {
             int strLength = str.length();//获取str的长度
@@ -31,15 +40,19 @@ public class GetCount {
                  * 方式一
                  */
 
-                while ((index = str.indexOf(find)) != -1) {//循环，如果查找到了,就把查找到的位置号给index，如果没有查找到就等于-1
-                    count++;//计算器每次增加1
-                    str = str.substring(index + findLength);//如果查找到了,就把查找到的位置号给str并且加上这个查找字符的长度，让它下次查找从这个新的str开始
-                }
+//                while ((index = str.indexOf(find)) != -1) {//循环，如果查找到了,就把查找到的位置号给index，如果没有查找到就等于-1
+//                    count++;//计算器每次增加1
+//                    str = str.substring(index + findLength);//如果查找到了,就把查找到的位置号给str并且加上这个查找字符的长度，让它下次查找从这个新的str开始
+//                }
                 /**
                  * @author pgwstr
                  * @date 2022/9/7 21:46
                  * 方式二
                  */
+                while ((index = str.indexOf(find,index)) != -1) {//循环，如果查找到了,就把查找到的位置号给index，如果没有查找到就等于-1
+                    count++;//计算器每次增加1
+                    index += findLength;//如果查找到了,就把查找到的位置号给str并且加上这个查找字符的长度，让它下次查找从这个新的str开始
+                }
                 return count;//返回出现的次数
             } else {
                 return 0;
