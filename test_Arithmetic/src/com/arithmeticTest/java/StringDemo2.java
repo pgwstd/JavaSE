@@ -11,6 +11,9 @@ import org.junit.Test;
 public class StringDemo2 {
     @Test
     public void test() {
+        MaxStr s1 = new MaxStr();
+        String str = "abcsdadadshellodadsadw";
+        String str2 = "bfrewhello";
 
     }
 
