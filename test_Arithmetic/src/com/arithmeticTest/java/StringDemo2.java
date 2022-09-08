@@ -17,15 +17,22 @@ public class StringDemo2 {
 
     }
 
-    class MaxStr{
-        public String MaxString(String str,String str2){
-            String Maxstr = str.length() >= str2.length() ? str : str2;
-            String Minstr = str.length() < str2.length() ? str : str2;
+    class MaxStr {
+        public String MaxString(String str, String str2) {
+            if (str != null && str2 != null) {
+                String Maxstr = str.length() >= str2.length() ? str : str2;
+                String Minstr = str.length() < str2.length() ? str : str2;
+                int length = Minstr.length();
 
-            if (str != null || str2 != null){
-
+                for (int i = 0; i < length; i++) {
+                    for (int j = 0, z = length - i; z <= length; j++, z++) {
+                        String subStr = Minstr.substring(j, z);
+                        if (Maxstr.contains(subStr)) {
+                            return subStr;
+                        }
+                    }
+                }
             }
-
             return null;
         }
     }
