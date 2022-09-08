@@ -14,8 +14,10 @@ import java.util.Date;
 public class DeteTimeTest {
     @Test
     public void test(){
-        SimpleDateFormat sdf = new SimpleDateFormat();//实例化
-        Date date = new Date();//格式化：日期 --> 字符串
+        //实例化SimpleDateFormat
+        SimpleDateFormat sdf = new SimpleDateFormat();
+        //格式化：日期 --> 字符串
+        Date date = new Date();
         System.out.println(date);
         String format = sdf.format(date);
         System.out.println(format);
