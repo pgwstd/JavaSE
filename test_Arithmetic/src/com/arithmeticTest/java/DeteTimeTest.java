@@ -26,7 +26,7 @@ public class DeteTimeTest {
 //        Date date1 = sdf.parse(str);
 //        System.out.println(date1);
         //*****************
-        SimpleDateFormat sdf2 = new SimpleDateFormat();
+        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         String format2 = sdf2.format(date);
         System.out.println(format2);
 
