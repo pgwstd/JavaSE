@@ -27,9 +27,12 @@ public class DeteTimeTest {
 //        System.out.println(date1);
         //*****************
         SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        //格式式
         String format2 = sdf2.format(date);
         System.out.println(format2);
-
+        //解析
+//        Date parse = sdf2.parse("2022-09-08 04:49:04");
+//        System.out.println(parse);
     }
 
 
