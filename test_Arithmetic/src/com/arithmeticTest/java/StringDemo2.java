@@ -14,7 +14,8 @@ public class StringDemo2 {
         MaxStr s1 = new MaxStr();
         String str = "abcsdadadshellodadsadw";
         String str2 = "bfrewhello";
-
+        String str3 =  s1.MaxString(str,str2);
+        System.out.println(str3);
     }
 
     class MaxStr {
