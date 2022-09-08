@@ -36,5 +36,19 @@ public class DeteTimeTest {
         System.out.println(parse);
     }
 
+    @Test
+    /**
+     * @author pgwstr
+     * @date 2022/9/8 16:54
+     * 使用SimpleDateFormat来把字符串中的"2020-09-09"来转换成java.sql.Date
+     */
+
+    public void test2() throws ParseException{
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String birth = "2022-09-09";
+        Date date = sdf.parse(birth);
+        java.sql.Date date2 = new java.sql.Date(date.getTime());//强制转换为java.sql.Date下的时间格式
+        System.out.println(date2);
+    }
 
 }
