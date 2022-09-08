@@ -17,6 +17,8 @@ public class DeteTimeTest {
         SimpleDateFormat sdf = new SimpleDateFormat();//实例化
         Date date = new Date();//格式化：日期 --> 字符串
         System.out.println(date);
+        String format = sdf.format(date);
+        System.out.println(format);
     }
 
 
