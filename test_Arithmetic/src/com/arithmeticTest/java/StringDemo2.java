@@ -19,7 +19,12 @@ public class StringDemo2 {
 
     class MaxStr{
         public String MaxString(String str,String str2){
+            String Maxstr = str.length() >= str2.length() ? str : str2;
+            String Minstr = str.length() < str2.length() ? str : str2;
 
+            if (str != null || str2 != null){
+
+            }
 
             return null;
         }
