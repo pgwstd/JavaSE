@@ -21,6 +21,15 @@ public class DeteTimeTest {
         System.out.println(date);
         String format = sdf.format(date);
         System.out.println(format);
+        //解析：格式化的逆过来，字符串 --> 日期
+//        String str = "22-09-08 下午4:44";
+//        Date date1 = sdf.parse(str);
+//        System.out.println(date1);
+        //*****************
+        SimpleDateFormat sdf2 = new SimpleDateFormat();
+        String format2 = sdf2.format(date);
+        System.out.println(format2);
+
     }
 
 
