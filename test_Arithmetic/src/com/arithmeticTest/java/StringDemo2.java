@@ -20,7 +20,7 @@ public class StringDemo2 {
 
     class MaxStr {
         public String MaxString(String str, String str2) {
-            if (str != null && str2 != null) {
+            if (str != null && str2 != null) {//判断两个字符串是否有一个为空，如果有一个为空就返回null
                 String Maxstr = str.length() >= str2.length() ? str : str2;
                 String Minstr = str.length() < str2.length() ? str : str2;
                 int length = Minstr.length();
