@@ -26,7 +26,7 @@ public class StringDemo2 {
                 int length = Minstr.length();//获取最短字符的长度，来确定要查找的次数，和查找的对象
 
                 for (int i = 0; i < length; i++) {//查找最小长度的字符串的次数，如果查找完最小字符串的长度还没有找到，证明里面没有以之相同的字符串
-                    for (int j = 0, z = length - i; z <= length; j++, z++) {//
+                    for (int j = 0, z = length - i; z <= length; j++, z++) {//循环从0到最小的字符串长度里面找与最大字符串相同的字符，如果从0到length都找不到，就减少最后一个字符，直到找到与之相同的字符串
                         String subStr = Minstr.substring(j, z);
                         if (Maxstr.contains(subStr)) {
                             return subStr;
