@@ -104,6 +104,10 @@ public class DateTest {
         String format = dateTimeFormatter1.format(LocalDate.now());
         System.out.println(format);
 
+        //自定义时间格式
+        DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        String format1 = dateTimeFormatter2.format(LocalDate.now());
+        System.out.println(format1);
 
     }
 }
