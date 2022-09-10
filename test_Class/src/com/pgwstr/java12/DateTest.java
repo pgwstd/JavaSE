@@ -2,10 +2,7 @@ package com.pgwstr.java12;
 
 import org.junit.jupiter.api.Test;
 
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.time.*;
 
 /**
  * @author pgwstr
@@ -61,5 +58,11 @@ public class DateTest {
     public void test2(){
         Instant instant = Instant.now();
         System.out.println(instant);
+
+        /*
+        添加时间偏移量
+         */
+        OffsetDateTime offsetDateTime = instant.atOffset(ZoneOffset.ofHours(8));
+        System.out.println(offsetDateTime);
     }
 }
