@@ -25,5 +25,11 @@ public class DateTest {
 
         LocalDateTime localDateTime = LocalDateTime.now();//获取当前日期与时间
         System.out.println(localDateTime);
+
+        /*
+        of():设置指定的年、月、日、时、分、秒。没有偏移量
+         */
+        LocalDate localDate1 = LocalDate.of(1998, 2, 14);
+        System.out.println(localDate1);
     }
 }
