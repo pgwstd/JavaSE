@@ -57,12 +57,22 @@ public class DateTest {
     @Test
     public void test2(){
         Instant instant = Instant.now();
-        System.out.println(instant);
+        System.out.println(instant);//2022-09-10T02:45:35.823Z
 
         /*
         添加时间偏移量
          */
         OffsetDateTime offsetDateTime = instant.atOffset(ZoneOffset.ofHours(8));
-        System.out.println(offsetDateTime);
+        System.out.println(offsetDateTime);//2022-09-10T10:45:35.823+08:00
+
+        /*
+        获取从1980-1-1-0-0-0到当前时间的毫秒时
+         */
+        long l = instant.toEpochMilli();
+        System.out.println(l);//1662778092679
+
+        //给定毫秒时转换成当前的时间
+        Instant instant1 = Instant.ofEpochMilli(1662778092679L);
+        System.out.println(instant1);
     }
 }
