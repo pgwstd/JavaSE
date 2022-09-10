@@ -2,6 +2,7 @@ package com.pgwstr.java12;
 
 import org.junit.jupiter.api.Test;
 
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -55,5 +56,10 @@ public class DateTest {
 
         LocalDate localDate4 = localDate1.minusDays(1);
         System.out.println(localDate4);
+    }
+    @Test
+    public void test2(){
+        Instant instant = Instant.now();
+        System.out.println(instant);
     }
 }
