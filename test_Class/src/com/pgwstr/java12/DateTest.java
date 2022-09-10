@@ -31,5 +31,11 @@ public class DateTest {
          */
         LocalDate localDate1 = LocalDate.of(1998, 2, 14);
         System.out.println(localDate1);
+        LocalTime localTime1 = LocalTime.of(18, 18);
+        System.out.println(localTime1);
+
+        LocalDateTime localDateTime1 = LocalDateTime.of(1998, 2, 14, 14, 30, 30);
+        System.out.println(localDateTime1);
+
     }
 }
