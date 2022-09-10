@@ -99,5 +99,11 @@ public class DateTest {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG);
         String str2 = dateTimeFormatter.format(localDateTime);
         System.out.println(str2);
+
+        DateTimeFormatter dateTimeFormatter1 = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM);
+        String format = dateTimeFormatter1.format(LocalDate.now());
+        System.out.println(format);
+
+
     }
 }
