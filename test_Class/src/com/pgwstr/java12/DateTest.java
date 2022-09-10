@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.time.temporal.TemporalAccessor;
 
 /**
  * @author pgwstr
@@ -81,7 +83,21 @@ public class DateTest {
     Date Time Formatter:格式化或解析日期、时间类似于SimpleDateFormat
      */
     public void test3(){
+        //预定义标准格式
         DateTimeFormatter isoDateTime = DateTimeFormatter.ISO_DATE_TIME;
+        //格式化：日期 --> 字符串
+        LocalDateTime localDateTime = LocalDateTime.now();
+        String str1 = isoDateTime.format(localDateTime);
+        System.out.println(localDateTime);//2022-09-10T12:25:57.122
+        System.out.println(str1);//2022-09-10T12:25:57.122
 
+        //解析：字符串 --> 日期
+        TemporalAccessor parse = isoDateTime.parse("2022-09-10T12:25:57.122");
+        System.out.println(parse);
+
+        //本地格式化
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG);
+        String str2 = dateTimeFormatter.format(localDateTime);
+        System.out.println(str2);
     }
 }
