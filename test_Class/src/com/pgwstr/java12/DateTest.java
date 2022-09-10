@@ -48,6 +48,12 @@ public class DateTest {
         System.out.println(localDateTime1.getDayOfYear());
         System.out.println(localDateTime1.getMinute());
 
+        LocalDate localDate2 = localDate1.withDayOfMonth(11);
+        System.out.println(localDate2);
+        LocalDate localDate3 = localDate1.plusMonths(2);
+        System.out.println(localDate3);
 
+        LocalDate localDate4 = localDate1.minusDays(1);
+        System.out.println(localDate4);
     }
 }
