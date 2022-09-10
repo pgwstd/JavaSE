@@ -3,6 +3,7 @@ package com.pgwstr.java12;
 import org.junit.jupiter.api.Test;
 
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 
 /**
  * @author pgwstr
@@ -74,5 +75,13 @@ public class DateTest {
         //给定毫秒时转换成当前的时间
         Instant instant1 = Instant.ofEpochMilli(1662778092679L);
         System.out.println(instant1);
+    }
+    @Test
+    /*
+    Date Time Formatter:格式化或解析日期、时间类似于SimpleDateFormat
+     */
+    public void test3(){
+        DateTimeFormatter isoDateTime = DateTimeFormatter.ISO_DATE_TIME;
+
     }
 }
