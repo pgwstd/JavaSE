@@ -34,8 +34,20 @@ public class DateTest {
         LocalTime localTime1 = LocalTime.of(18, 18);
         System.out.println(localTime1);
 
-        LocalDateTime localDateTime1 = LocalDateTime.of(1998, 2, 14, 14, 30, 30);
+        LocalDateTime localDateTime1 = LocalDateTime.of(1998, 2, 14, 15, 30, 50);
         System.out.println(localDateTime1);
+
+
+        /*
+        getXxx(）获取当前日期的第几天
+         */
+
+        System.out.println(localDateTime1.getDayOfMonth());
+        System.out.println(localDateTime1.getHour());
+        System.out.println(localDateTime1.getDayOfWeek());
+        System.out.println(localDateTime1.getDayOfYear());
+        System.out.println(localDateTime1.getMinute());
+
 
     }
 }
