@@ -15,5 +15,6 @@ public class CompareTest {
         String[] arr = new String[]{"AA", "CC", "DD", "BB", "FF", "EE"};
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
+
     }
 }
