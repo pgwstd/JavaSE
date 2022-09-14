@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAccessor;
 import java.util.Date;
 
 /**
@@ -25,5 +27,12 @@ public class OtherClassTest {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         java.util.Date parse = sdf.parse("2017-08-16");
         System.out.println(parse.toString());
+        //方式二：java8之后
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        TemporalAccessor parse1 = dateTimeFormatter.parse("2017-08-16");
+        System.out.println(parse1);
+
+
+
     }
 }
