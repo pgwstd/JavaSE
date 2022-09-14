@@ -31,8 +31,9 @@ public class OtherClassTest {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         TemporalAccessor parse1 = dateTimeFormatter.parse("2017-08-16");
         System.out.println(parse1);
-
-
-
+    }
+    @Test
+    public void test4(){
+        System.out.println(123);
     }
 }
