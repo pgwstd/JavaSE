@@ -17,4 +17,8 @@ public class CompareTest {
         System.out.println(Arrays.toString(arr));
 
     }
+    @Test
+    public void test2(){
+
+    }
 }
