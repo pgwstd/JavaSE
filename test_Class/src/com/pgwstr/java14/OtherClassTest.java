@@ -35,5 +35,6 @@ public class OtherClassTest {
     @Test
     public void test4(){
         System.out.println(123);
+
     }
 }
