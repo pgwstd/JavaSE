@@ -9,6 +9,10 @@ public class EnumTest {
     public static void main(String[] args) {
         Season summer = Season.SUMMER;
         System.out.println(summer);
+        System.out.println("***************");
+        for (Season value : Season.values()) {
+            System.out.println(value);
+        }
 
     }
 
