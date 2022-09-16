@@ -13,7 +13,9 @@ public class EnumTest {
         for (Season value : Season.values()) {
             System.out.println(value);
         }
-
+        System.out.println("****************");
+        Season of = Season.valueOf("WINTER");
+        System.out.println(of);
     }
 
     enum Season {
