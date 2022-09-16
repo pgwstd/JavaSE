@@ -16,9 +16,10 @@ public class EnumTest {
         System.out.println("****************");
         Season of = Season.valueOf("WINTER");
         System.out.println(of);
+
     }
 
-    enum Season {
+    enum Season{
         SUMMER("夏天"),
         WINTER("冬天");
         private final String seasonName;
