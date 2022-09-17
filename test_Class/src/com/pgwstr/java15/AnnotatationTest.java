@@ -6,4 +6,5 @@ package com.pgwstr.java15;
  */
 
 public class AnnotatationTest {
+
 }
