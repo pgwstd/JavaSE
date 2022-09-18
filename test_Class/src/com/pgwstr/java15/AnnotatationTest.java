@@ -21,13 +21,11 @@ public class AnnotatationTest {
             coll.add(123);
             coll.add(new Date());
             System.out.println(coll.size());
-
             Collection coll1 = new ArrayList();
             coll1.add("cc");
             coll1.add(456);
             coll.add(coll1);
             System.out.println(coll1.size());
-
             System.out.println(coll.isEmpty());
             coll.clear();
             System.out.println(coll.isEmpty());
