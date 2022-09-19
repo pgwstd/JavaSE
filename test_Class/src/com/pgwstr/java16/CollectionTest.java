@@ -26,4 +26,10 @@ public class CollectionTest {
         collection.add(new Person("jeno",12));
         System.out.println(collection);
     }
+    @Test
+    public void test2(){
+        Collection coll = new ArrayList();
+        boolean contains = coll.contains(123);  //判断当前集合是否包含object
+        System.out.println(contains);
+    }
 }
