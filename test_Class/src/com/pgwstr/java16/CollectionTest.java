@@ -33,6 +33,7 @@ public class CollectionTest {
         System.out.println(contains);
 
         System.out.println("*************************");
+        System.out.println(coll.contains(new String("mon")));
 
     }
 }
