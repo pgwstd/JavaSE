@@ -1,5 +1,6 @@
 package com.pgwstr.java16;
 
+import com.sun.prism.shader.Solid_LinearGradient_PAD_AlphaTest_Loader;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -18,6 +19,11 @@ public class CollectionTest {
         collection.add(456);
         collection.add(new String("TOM"));
         collection.add(false);
+        System.out.println(collection);
         System.out.println(collection.toString());
+        System.out.println(collection.isEmpty());
+
+        collection.add(new Person("jeno",12));
+        System.out.println(collection);
     }
 }
