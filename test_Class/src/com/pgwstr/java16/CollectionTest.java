@@ -35,5 +35,8 @@ public class CollectionTest {
         System.out.println("*************************");
         System.out.println(coll.contains(new String("mon")));
 
+        System.out.println(coll.contains(new Person("TnT", 23)));
+
+
     }
 }
