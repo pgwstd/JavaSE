@@ -37,6 +37,9 @@ public class CollectionTest {
 
         System.out.println(coll.contains(new Person("TnT", 23)));
 
+    }
+    @Test
+    public void test3(){
 
     }
 }
