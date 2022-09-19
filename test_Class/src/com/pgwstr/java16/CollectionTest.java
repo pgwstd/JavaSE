@@ -31,5 +31,8 @@ public class CollectionTest {
         Collection coll = new ArrayList();
         boolean contains = coll.contains(123);  //判断当前集合是否包含object
         System.out.println(contains);
+
+        System.out.println("*************************");
+
     }
 }
