@@ -45,4 +45,15 @@ public class CollectionTest {
         Collection coll = Arrays.asList(123,456,789);
         System.out.println(coll.containsAll(coll));
     }
+    @Test
+    public void test4(){
+        Collection collection = new ArrayList();
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("TOM"));
+        collection.add(false);
+        collection.remove(123);
+        System.out.println(collection);
+
+    }
 }
