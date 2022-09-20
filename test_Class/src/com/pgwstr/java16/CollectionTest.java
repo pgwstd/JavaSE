@@ -101,8 +101,8 @@ public class CollectionTest {
             System.out.println(arr[i]);
         }
 
-        String[] arr2 = new String[]{"abc", "bec", "kkk"};
-        Collection coll2 = Arrays.asList(arr2);//数组转换成集合
+//        String[] arr2 = new String[]{"abc", "bec", "kkk"};
+        Collection coll2 = Arrays.asList(new String[]{"abc", "bec", "kkk"});//数组转换成集合
         System.out.println(coll2);
     }
 }
