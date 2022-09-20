@@ -3,7 +3,9 @@ package com.pgwstr.java16;
 import com.sun.prism.shader.Solid_LinearGradient_PAD_AlphaTest_Loader;
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 /**
@@ -40,6 +42,7 @@ public class CollectionTest {
     }
     @Test
     public void test3(){
-
+        Collection coll = Arrays.asList(123,456,789);
+        System.out.println(coll.containsAll(coll));
     }
 }
