@@ -104,5 +104,14 @@ public class CollectionTest {
 //        String[] arr2 = new String[]{"abc", "bec", "kkk"};
         Collection coll2 = Arrays.asList(new String[]{"abc", "bec", "kkk"});//数组转换成集合
         System.out.println(coll2);
+
+        List ints = Arrays.asList(11, 22, 33);
+        System.out.println(ints);
+
+        List<int[]> ints1 = Arrays.asList(new int[]{11, 22, 33});
+        System.out.println(ints1.size());
+
+        List ints2 = Arrays.asList(new Integer[]{11, 22, 33});
+        System.out.println(ints2.size());
     }
 }
