@@ -113,5 +113,7 @@ public class CollectionTest {
 
         List ints2 = Arrays.asList(new Integer[]{11, 22, 33});
         System.out.println(ints2.size());
+
+
     }
 }
