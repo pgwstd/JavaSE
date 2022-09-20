@@ -67,8 +67,9 @@ public class CollectionTest {
         System.out.println(collection);
 
     }
+
     @Test
-    public void test5(){
+    public void test5() {
         Collection collection = new ArrayList();
         collection.add(123);
         collection.add(456);
@@ -82,5 +83,17 @@ public class CollectionTest {
         collection1.add(false);
 
         System.out.println(collection.equals(collection1));
+    }
+
+    @Test
+    public void test6(){
+        Collection collection = new ArrayList();
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("TOM"));
+        collection.add(false);
+
+        System.out.println(collection.hashCode());
+
     }
 }
