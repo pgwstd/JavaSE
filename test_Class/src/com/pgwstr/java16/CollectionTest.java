@@ -53,12 +53,14 @@ public class CollectionTest {
         collection.add(456);
         collection.add(new String("TOM"));
         collection.add(false);
-//        collection.remove(123);
+//        collection.remove(123);//删除集合里面的指定元素
 //        System.out.println(collection);
 //        collection.remove(new String("TOM"));
 //        System.out.println(collection);
         Collection coll1 =  Arrays.asList(123, 456);
-        collection.removeAll(coll1);
+        collection.removeAll(coll1);//删除集合里面的指定集合里的所有元素
         System.out.println(collection);
+
+
     }
 }
