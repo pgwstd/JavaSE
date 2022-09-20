@@ -93,7 +93,13 @@ public class CollectionTest {
         collection.add(new String("TOM"));
         collection.add(false);
 
-        System.out.println(collection.hashCode());
+        System.out.println(collection.hashCode());//返回当前集合的哈希值
+
+
+        Object[] arr = collection.toArray();//集合转换成数组
+        for (int i = 0; i < arr.length; i++){
+            System.out.println(arr[i]);
+        }
 
     }
 }
