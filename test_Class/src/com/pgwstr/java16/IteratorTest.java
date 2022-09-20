@@ -33,4 +33,27 @@ public class IteratorTest {
 
         }
     }
+    @Test
+    public void test2(){
+        Collection collection = new ArrayList();
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("TOM"));
+        collection.add(false);
+        System.out.println(collection);
+        Iterator iterator = collection.iterator();
+        while (iterator.hasNext()) {
+            Object obj = iterator.next();//把迭代器的值一个一个的给obj
+            if ("TOM".equals(obj)){  //比较是不是TOM，是就删掉(obj写在后面是为了避免空指针会出错)
+                iterator.remove();
+            }
+        }
+
+        iterator = collection.iterator();
+        while (iterator.hasNext()) {
+
+            System.out.println(iterator.next());
+        }
+
+    }
 }
