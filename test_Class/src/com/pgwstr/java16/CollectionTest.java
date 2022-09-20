@@ -86,7 +86,7 @@ public class CollectionTest {
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         Collection collection = new ArrayList();
         collection.add(123);
         collection.add(456);
@@ -97,9 +97,12 @@ public class CollectionTest {
 
 
         Object[] arr = collection.toArray();//集合转换成数组
-        for (int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
 
+        String[] arr2 = new String[]{"abc", "bec", "kkk"};
+        Collection coll2 = Arrays.asList(arr2);//数组转换成集合
+        System.out.println(coll2);
     }
 }
