@@ -58,9 +58,10 @@ public class CollectionTest {
 //        collection.remove(new String("TOM"));
 //        System.out.println(collection);
         Collection coll1 =  Arrays.asList(123, 456);
-        collection.removeAll(coll1);//删除集合里面的指定集合里的所有元素
+//        collection.removeAll(coll1);//删除集合里面的指定集合里的所有元素
+//        System.out.println(collection);
+        collection.retainAll(coll1);//拿出这两个集合的共同部分
         System.out.println(collection);
-
 
     }
 }
