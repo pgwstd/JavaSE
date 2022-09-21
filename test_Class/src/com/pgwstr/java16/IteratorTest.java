@@ -76,8 +76,11 @@ public class IteratorTest {
     public void test4() {
         String[] arr = new String[]{"123", "456", "789"};
 
-        for (int i = 0; i < arr.length; i++){
-            arr[i] = "MM";
+//        for (int i = 0; i < arr.length; i++){
+//            arr[i] = "MM";
+//        }
+        for (String i:arr){
+            i = "MM";//不会被改，因为是i相当于是new出来的一个String,所以它有String的不可变性
         }
         for (String i:arr){
             System.out.println(i);
