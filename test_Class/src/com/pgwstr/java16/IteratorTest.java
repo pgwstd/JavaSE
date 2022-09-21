@@ -13,7 +13,7 @@ import java.util.Iterator;
 
 public class IteratorTest {
     @Test
-    public void test(){
+    public void test() {
         Collection collection = new ArrayList();
         collection.add(123);
         collection.add(456);
@@ -28,13 +28,14 @@ public class IteratorTest {
 //        System.out.println(iterator.next());
 //        System.out.println(iterator.next());//出错，迭代器越界
         //方式二：使用hasNext()方法进行循环迭代
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
 
         }
     }
+
     @Test
-    public void test2(){
+    public void test2() {
         Collection collection = new ArrayList();
         collection.add(123);
         collection.add(456);
@@ -44,7 +45,7 @@ public class IteratorTest {
         Iterator iterator = collection.iterator();
         while (iterator.hasNext()) {
             Object obj = iterator.next();//把迭代器的值一个一个的给obj
-            if ("TOM".equals(obj)){  //比较是不是TOM，是就删掉(obj写在后面是为了避免空指针会出错)
+            if ("TOM".equals(obj)) {  //比较是不是TOM，是就删掉(obj写在后面是为了避免空指针会出错)
                 iterator.remove();
             }
         }
@@ -56,13 +57,18 @@ public class IteratorTest {
         }
 
     }
+
     @Test
-    public void test3(){
+    public void test3() {
 
-
-
-
-
+        Collection collection = new ArrayList();
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("TOM"));
+        collection.add(false);
+        for (Object i: collection){  //调用的方法里面有迭代器，所以可以这样遍历
+            System.out.println(i);
+        }
 
     }
 }
