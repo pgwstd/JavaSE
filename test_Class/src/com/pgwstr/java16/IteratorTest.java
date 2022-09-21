@@ -66,9 +66,21 @@ public class IteratorTest {
         collection.add(456);
         collection.add(new String("TOM"));
         collection.add(false);
-        for (Object i: collection){  //调用的方法里面有迭代器，所以可以这样遍历
+        for (Object i : collection) {  //调用的方法里面有迭代器，所以可以这样遍历
             System.out.println(i);
         }
 
+    }
+
+    @Test
+    public void test4() {
+        String[] arr = new String[]{"123", "456", "789"};
+
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = "MM";
+        }
+        for (String i:arr){
+            System.out.println(i);
+        }
     }
 }
