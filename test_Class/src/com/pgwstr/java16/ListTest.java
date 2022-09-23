@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class ListTest {
     @Test
     public void test(){
-
+        System.out.println(123);
 
     }
 }
