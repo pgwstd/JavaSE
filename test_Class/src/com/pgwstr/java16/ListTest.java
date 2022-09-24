@@ -12,7 +12,12 @@ public class ListTest {
     public void test(){
         System.out.println(123);
         System.out.println(456);
+    }
+    @Test
+    public void test2(){
+
 
 
     }
+
 }
