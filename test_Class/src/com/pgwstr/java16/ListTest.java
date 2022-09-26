@@ -44,7 +44,11 @@ public class ListTest {
         arrayList.add("Bb");
         int i = arrayList.indexOf(456);//第一次出现的位置下标，找不到就返回-1
         System.out.println(i);
-        Object obj  = arrayList.remove("Aa");
+        Object obj  = arrayList.remove("Aa"); //删除某个元素
         System.out.println(arrayList);
+        arrayList.set(1, "AA");//更改某个位置的元素
+        System.out.println(arrayList);
+        List list = arrayList.subList(2, 3);//返回指定区间的内容（左闭右开）
+        System.out.println(list);
     }
 }
