@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -50,5 +51,19 @@ public class ListTest {
         System.out.println(arrayList);
         List list = arrayList.subList(2, 3);//返回指定区间的内容（左闭右开）
         System.out.println(list);
+        System.out.println("*******************");
+
+
+        //遍历的方式一
+        Iterator iterator = arrayList.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+        //遍历方式二
+        System.out.println("*********************");
+        for (Object ob : arrayList){
+            System.out.println(ob);
+        }
     }
 }
