@@ -34,5 +34,17 @@ public class ListTest {
         System.out.println(arrayList);
         System.out.println(arrayList.size());
     }
-
+    @Test
+    public void test3(){
+        ArrayList arrayList = new ArrayList();
+        arrayList.add(123);
+        arrayList.add(456);
+        arrayList.add("Aa");
+        arrayList.add(new Person("Tom",21));
+        arrayList.add("Bb");
+        int i = arrayList.indexOf(456);//第一次出现的位置下标，找不到就返回-1
+        System.out.println(i);
+        Object obj  = arrayList.remove("Aa");
+        System.out.println(arrayList);
+    }
 }
