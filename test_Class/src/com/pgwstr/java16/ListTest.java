@@ -3,6 +3,8 @@ package com.pgwstr.java16;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author pgwstr
@@ -26,6 +28,11 @@ public class ListTest {
         arrayList.add("Bb");
         System.out.println(arrayList.size());
 
+
+        List list = Arrays.asList(1, 2, 3);
+        arrayList.addAll(list);
+        System.out.println(arrayList);
+        System.out.println(arrayList.size());
     }
 
 }
