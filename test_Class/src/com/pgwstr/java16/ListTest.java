@@ -9,13 +9,13 @@ import org.junit.jupiter.api.Test;
 
 public class ListTest {
     @Test
-    public void test(){
+    public void test() {
         System.out.println(123);
         System.out.println(456);
     }
-    @Test
-    public void test2(){
 
+    @Test
+    public void test2() {
 
 
     }
