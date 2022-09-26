@@ -54,16 +54,22 @@ public class ListTest {
         System.out.println("*******************");
 
 
-        //遍历的方式一
+        //遍历的方式一(迭代器遍历)
         Iterator iterator = arrayList.iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
 
-        //遍历方式二
+        //遍历方式二(增加for循环)
         System.out.println("*********************");
         for (Object ob : arrayList){
             System.out.println(ob);
+        }
+
+        //遍历方式三(使用get方法)
+        System.out.println("***********************");
+        for (i = 0; i < arrayList.size(); i++){
+            System.out.println(arrayList.get(i));
         }
     }
 }
