@@ -71,5 +71,7 @@ public class ListTest {
         for (i = 0; i < arrayList.size(); i++){
             System.out.println(arrayList.get(i));
         }
+        //输出
+        
     }
 }
