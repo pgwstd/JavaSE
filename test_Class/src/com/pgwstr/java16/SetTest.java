@@ -30,5 +30,4 @@ public class SetTest {
             System.out.println(iterator.next());
         }
     }
-
 }
