@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 
 /**
  * @author pgwstr
@@ -32,7 +33,7 @@ public class SetTest {
     }
     @Test
     public void test2(){
-        HashSet hashSet = new HashSet();
+        HashSet hashSet = new LinkedHashSet();
         hashSet.add(123);
         hashSet.add(456);
         hashSet.add("AA");
