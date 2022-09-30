@@ -30,4 +30,18 @@ public class SetTest {
             System.out.println(iterator.next());
         }
     }
+    @Test
+    public void test2(){
+        HashSet hashSet = new HashSet();
+        hashSet.add(123);
+        hashSet.add(456);
+        hashSet.add("AA");
+        hashSet.add("BB");
+        hashSet.add(new Person("Tom",21));
+        hashSet.add(789);
+        Iterator iterator = hashSet.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+    }
 }
