@@ -4,10 +4,7 @@ import com.sun.prism.shader.Solid_LinearGradient_PAD_AlphaTest_Loader;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author pgwstr
@@ -113,7 +110,28 @@ public class CollectionTest {
 
         List ints2 = Arrays.asList(new Integer[]{11, 22, 33});
         System.out.println(ints2.size());
-
-
     }
+    @Test
+    public void test8(){
+        Collection collection = new ArrayList();
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("TOM"));
+        collection.add(false);
+        collection.forEach(System.out::println);
+    }
+    @Test
+    public void test9(){
+        Collection collection = new ArrayList();
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("TOM"));
+        collection.add(false);
+        Iterator iterator = collection.iterator();
+//        iterator.remove();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+    }
+
 }
