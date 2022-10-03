@@ -5,7 +5,7 @@ package com.pgwstr.java17;
  * @date 2022/10/3 22:52
  */
 
-public class Employee {
+public class Employee implements Comparable {
     private String name;
     private int age;
     private MyDate birthday;
@@ -50,5 +50,15 @@ public class Employee {
                 ", age=" + age +
                 ", birthday=" + birthday +
                 '}';
+    }
+
+    //重写自然排序，按照名字来排
+    @Override
+    public int compareTo(Object o) {
+        if (o instanceof Employee) {
+            Employee e = (Employee) o;
+            return this.name.compareTo(e.name);
+        }
+        throw new RuntimeException("传入的数据不一致");
     }
 }
