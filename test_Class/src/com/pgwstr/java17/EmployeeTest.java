@@ -45,19 +45,23 @@ public class EmployeeTest {
 
                         MyDate b1 = e1.getBirthday();
                         MyDate b2 = e2.getBirthday();
-                        //当年不相同
-                        int year = b1.getYear() - b2.getYear();
-                        if (year != 0){
-                            return year;
-                        }
-                        //当月不相同
-                        int mon = b1.getMonth() - b2.getMonth();
-                        if (mon != 0){
-                            return mon;
-                        }
-                        //当日不相同直接返回
-                        return b1.getDay() - b2.getDay();
+                        //方式一：
+//                        //当年不相同
+//                        int year = b1.getYear() - b2.getYear();
+//                        if (year != 0){
+//                            return year;
+//                        }
+//                        //当月不相同
+//                        int mon = b1.getMonth() - b2.getMonth();
+//                        if (mon != 0){
+//                            return mon;
+//                        }
+//                        //当日不相同直接返回
+//                        return b1.getDay() - b2.getDay();
 
+
+                        //方式二
+                        return b1.compareTo(b2);
                     }
                     throw new RuntimeException("传入的数据不一致");
                 }
