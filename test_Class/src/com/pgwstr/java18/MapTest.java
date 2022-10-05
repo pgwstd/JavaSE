@@ -16,10 +16,11 @@ public class MapTest {
     public void test(){
         Map map = new HashMap();
         Hashtable hashtable = new Hashtable();
-//        hashtable.put(null,null);
+//        hashtable.put(null,null); 不可以为空
         map.put(11,45);
         System.out.println(map);
         map.put(11,22);
         System.out.println(map);
+
     }
 }
