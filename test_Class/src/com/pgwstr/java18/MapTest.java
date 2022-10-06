@@ -21,6 +21,5 @@ public class MapTest {
         System.out.println(map);
         map.put(11,22);
         System.out.println(map);
-
     }
 }
