@@ -2,9 +2,7 @@ package com.pgwstr.java18;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author pgwstr
@@ -49,8 +47,8 @@ public class MapTest {
     @Test
     public void test3(){
         Map map = new HashMap();
-        map.put("AA",1);    //添加
-        map.put("BB",2);    //修改
+        map.put("AA",1);
+        map.put("BB",2);
         map.put("CC",3);
 
         System.out.println(map.get("BB"));  //get是要用来获取这个key的value值
@@ -75,5 +73,24 @@ public class MapTest {
 
         System.out.println(map2.equals(map3));  //equals是用来判断两个集合中的键值对是否相同（布尔）
         System.out.println(map2.equals(map4));
+    }
+    @Test
+    public void test4(){
+        Map map = new HashMap();
+        map.put("AA",1);
+        map.put("BB",2);
+        map.put("CC",3);
+        Set set = map.keySet();
+        System.out.println(map.keySet());   //遍历map集合中的键值对的key值
+        Iterator iterator = set.iterator(); //使用迭代器来遍历
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+        Collection values = map.values();
+        System.out.println(map.values());
+        for (Object obj : values){
+            System.out.println(obj);
+        }
     }
 }
