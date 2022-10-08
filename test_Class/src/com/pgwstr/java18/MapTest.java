@@ -86,11 +86,20 @@ public class MapTest {
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
-
+        System.out.println("-------------------");
         Collection values = map.values();
         System.out.println(map.values());   //遍历map集合中的键值对的value值
         for (Object obj : values){          //使用增加for循环来遍历
             System.out.println(obj);
+        }
+        System.out.println("-------------------");
+        Set entrySet = map.entrySet();  //获取map集合中所有的key value的值
+        Iterator iterator1 = entrySet.iterator();   //使用迭代器来遍历map集合中的key和value值
+        while (iterator1.hasNext()){
+//            System.out.println(iterator1.next());
+            Object obj = iterator1.next();
+            Map.Entry entry = (Map.Entry) obj;
+            System.out.println(entry.getKey() + "--->" + entry.getValue());
         }
     }
 }
