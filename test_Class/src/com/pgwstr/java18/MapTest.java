@@ -22,4 +22,14 @@ public class MapTest {
         map.put(11,22);
         System.out.println(map);
     }
+    @Test
+    public void test2(){
+        Map map = new HashMap();
+        map.put("AA",1);
+        map.put("AA",2);
+        map.put("BB",3);
+        System.out.println(map);
+
+
+    }
 }
