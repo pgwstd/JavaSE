@@ -63,6 +63,17 @@ public class MapTest {
         System.out.println("______________________");
         System.out.println(map.size()); //size是获取集合中键值对的对数
         System.out.println(map.isEmpty());  //isEmpty是用来判断集合里面是否没有存在键值对
+        map.clear();
+        System.out.println(map.isEmpty());
 
+        Map map2 = new HashMap();
+        map2.put("PP",11);
+        Map map3 = new HashMap();
+        map3.put("PP",11);
+        Map map4 = new HashMap();
+        map4.put("HH",666);
+
+        System.out.println(map2.equals(map3));  //equals是用来判断两个集合中的键值对是否相同（布尔）
+        System.out.println(map2.equals(map4));
     }
 }
