@@ -40,5 +40,19 @@ public class MapTest {
         Object remove = map.remove("DD");   //删除（要用key来找）
         System.out.println(remove);         //打印出所删除"CC"的value值
         System.out.println(map);
+
+        map.clear();    //删除所有的键值对(会删掉空间，只会删掉元素)
+        System.out.println(map.size());
+        System.out.println(map);
+    }
+
+    @Test
+    public void test3(){
+        Map map = new HashMap();
+        map.put("AA",1);    //添加
+        map.put("BB",2);    //修改
+        map.put("CC",3);
+
+        System.out.println(map.get("BB"));  //get是要用来获取这个key的value值
     }
 }
