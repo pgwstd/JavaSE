@@ -54,5 +54,15 @@ public class MapTest {
         map.put("CC",3);
 
         System.out.println(map.get("BB"));  //get是要用来获取这个key的value值
+        boolean aa = map.containsKey("AA"); //containsKey是通过键值对的key来判断集合中是否存在该键值对（布尔）
+        System.out.println(aa);
+        boolean b = map.containsValue(1);   //containsValue是通过键值对的value来判断集合中是否存在该键值对（布尔）
+        System.out.println(b);
+        System.out.println(map.containsKey("CC"));
+
+        System.out.println("______________________");
+        System.out.println(map.size()); //size是获取集合中键值对的对数
+        System.out.println(map.isEmpty());  //isEmpty是用来判断集合里面是否没有存在键值对
+
     }
 }
