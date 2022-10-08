@@ -88,8 +88,8 @@ public class MapTest {
         }
 
         Collection values = map.values();
-        System.out.println(map.values());
-        for (Object obj : values){
+        System.out.println(map.values());   //遍历map集合中的键值对的value值
+        for (Object obj : values){          //使用增加for循环来遍历
             System.out.println(obj);
         }
     }
