@@ -25,11 +25,20 @@ public class MapTest {
     @Test
     public void test2(){
         Map map = new HashMap();
-        map.put("AA",1);
-        map.put("AA",2);
+        map.put("AA",1);    //添加
+        map.put("AA",2);    //修改
         map.put("BB",3);
         System.out.println(map);
 
+        Map map2 = new HashMap();
+        map2.put("CC",2);    //修改
+        map2.put("DD",3);
+        map.putAll(map2);   //添加到map里
+        System.out.println(map2);
+        System.out.println(map);
 
+        Object remove = map.remove("DD");   //删除（要用key来找）
+        System.out.println(remove);         //打印出所删除"CC"的value值
+        System.out.println(map);
     }
 }
