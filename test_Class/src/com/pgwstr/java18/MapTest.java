@@ -101,5 +101,14 @@ public class MapTest {
             Map.Entry entry = (Map.Entry) obj;
             System.out.println(entry.getKey() + "--->" + entry.getValue());
         }
+        //方式二：
+        Set Set2 = map.keySet();
+        Iterator iterator2 = Set2.iterator();
+        while (iterator2.hasNext()){
+            Object key = iterator2.next();
+            Object value = map.get(key);
+            System.out.println(key + "==" + value);
+
+        }
     }
 }
