@@ -27,5 +27,7 @@ public class CollectionsTest {
         Collections.shuffle(list);  //随机输出
         System.out.println(list);
 
+        Collections.sort(list); //自然排序输出
+        System.out.println(list);
     }
 }
