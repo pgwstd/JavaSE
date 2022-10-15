@@ -6,5 +6,7 @@ package com.pgwstr.java19;
  */
 
 public class ChildTow extends Order<String>{
+        private int BankId;
+        private String BankName;
 
 }
