@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class GenericTest {
     @Test
     public void test(){
-        ArrayList<Integer> integers = new ArrayList<>();
+        ArrayList<Integer> integers = new ArrayList<>();    //泛型用来固定obj类型的输入规则
         integers.add(65);
         integers.add(98);
         integers.add(69);
