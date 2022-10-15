@@ -30,4 +30,13 @@ public class GenericTest {
         entry.put("tom",12);
         System.out.println(entry);
     }
+    @Test
+    public void test3(){
+        Order<String> stringOrder = new Order<>(1, "jock", "man");
+        stringOrder.setName("tom");
+        System.out.println(stringOrder.getName());
+
+        Child<Integer> integerChild = new Child<>();
+
+    }
 }
