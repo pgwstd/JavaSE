@@ -3,6 +3,7 @@ package com.pgwstr.java19;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * @author pgwstr
@@ -22,5 +23,11 @@ public class GenericTest {
             int score = list;
             System.out.println(score);
         }
+    }
+    @Test
+    public void test2(){
+        HashMap<String, Integer> entry = new HashMap<>();
+        entry.put("tom",12);
+        System.out.println(entry);
     }
 }
