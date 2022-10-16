@@ -1,5 +1,8 @@
 package com.pgwstr.java19;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author pgwstr
  * @date 2022/10/15 23:18
@@ -21,5 +24,12 @@ public class ChildTow extends Order<String>{
         super(id, name, orderT);
         BankId = bankId;
         BankName = bankName;
+    }
+    public <E> List<E> copy(E[] arr) {
+        ArrayList<E> list = new ArrayList<>();
+        for (E e : arr) {
+            list.add(e);
+        }
+        return list;
     }
 }
