@@ -12,30 +12,31 @@ import java.util.HashMap;
 
 public class GenericTest {
     @Test
-    public void test(){
+    public void test() {
         ArrayList<Integer> integers = new ArrayList<>();    //泛型用来固定obj类型的输入规则
         integers.add(65);
         integers.add(98);
         integers.add(69);
         integers.add(78);
         integers.add(77);
-        for (Integer list: integers){
+        for (Integer list : integers) {
             int score = list;
             System.out.println(score);
         }
     }
+
     @Test
-    public void test2(){
+    public void test2() {
         HashMap<String, Integer> entry = new HashMap<>();
-        entry.put("tom",12);
+        entry.put("tom", 12);
         System.out.println(entry);
     }
+
     @Test
-    public void test3(){
+    public void test3() {
         Order<String> stringOrder = new Order<>(1, "jock", "man");
         stringOrder.setName("tom");
         System.out.println(stringOrder.getName());
-
         Child<Integer> integerChild = new Child<>();
     }
 }
