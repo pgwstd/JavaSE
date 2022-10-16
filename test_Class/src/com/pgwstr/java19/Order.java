@@ -6,8 +6,8 @@ package com.pgwstr.java19;
  */
 
 public class Order<T> {
-   private int id;
-   private String name;
+    private int id;
+    private String name;
     T orderT;
 
     public Order() {
@@ -43,4 +43,12 @@ public class Order<T> {
         return orderT;
     }
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", orderT=" + orderT +
+                '}';
+    }
 }
