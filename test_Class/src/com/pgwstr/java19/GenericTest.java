@@ -37,6 +37,5 @@ public class GenericTest {
         System.out.println(stringOrder.getName());
 
         Child<Integer> integerChild = new Child<>();
-
     }
 }
