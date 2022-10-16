@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * @author pgwstr
@@ -38,5 +39,13 @@ public class GenericTest {
         stringOrder.setName("tom");
         System.out.println(stringOrder.getName());
         Child<Integer> integerChild = new Child<>();
+    }
+
+    @Test
+    public void test4() {
+        Order<String> order = new Order<>();
+        Integer[] integer = new Integer[]{1, 2, 3, 4};
+        List<Integer> copy = order.copy(integer);
+        System.out.println(copy);
     }
 }
