@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -47,5 +48,22 @@ public class GenericTest {
         Integer[] integer = new Integer[]{1, 2, 3, 4};
         List<Integer> copy = order.copy(integer);
         System.out.println(copy);
+    }
+    @Test
+    public void test5(){
+        List<Object> list1 = null;
+        List<String> list2 = null;
+
+        List<?> list = null;
+
+        list = list1;
+        list = list2;
+    }
+    public void print(List<?> list){
+        Iterator<?> iterator = list.iterator();
+        while (iterator.hasNext()){
+            Object next = iterator.next();
+            System.out.println(next);
+        }
     }
 }
