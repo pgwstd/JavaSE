@@ -9,5 +9,4 @@ public class Child<T> extends Order<T> {
     private int Kid;
     private String sex;
     T ChildT;
-
 }
