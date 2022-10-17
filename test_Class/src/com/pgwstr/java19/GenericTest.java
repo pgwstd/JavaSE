@@ -59,8 +59,19 @@ public class GenericTest {
         list = list1;
         list = list2;
 
-        print(list1);
-        print(list2);
+//        print(list1);
+//        print(list2);
+
+
+        ArrayList<String> list3 = new ArrayList<>();
+        list3.add("AA");
+        list3.add("BB");
+        list3.add("CC");
+        list = list3;
+
+//        list.add("AA"); //不可以用通配符修饰过的变量，但可以加null
+        Object o = list.get(0);
+        System.out.println(o);
     }
     public void print(List<?> list){
         Iterator<?> iterator = list.iterator();
