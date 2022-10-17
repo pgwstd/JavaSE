@@ -58,6 +58,9 @@ public class GenericTest {
 
         list = list1;
         list = list2;
+
+        print(list1);
+        print(list2);
     }
     public void print(List<?> list){
         Iterator<?> iterator = list.iterator();
