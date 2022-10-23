@@ -14,5 +14,12 @@ public class FileTest {
     public void test(){
         File file = new File("hello.txt");
         System.out.println(file);
+        System.out.println(file.getAbsoluteFile());
+        System.out.println(file.getPath());
+        System.out.println(file.getName());
+        System.out.println(file.getParent());
+        System.out.println(file.length());
+        System.out.println(file.lastModified());
+
     }
 }
