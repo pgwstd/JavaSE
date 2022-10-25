@@ -46,4 +46,19 @@ public class FileTest {
             System.out.println("删除成功");
         }
     }
+    @Test
+    public void test4(){
+        File file = new File("/Users/panguangwei/Desktop//io//io1");
+        boolean mkdir = file.mkdir();   //没有目录就不会创建
+        if (mkdir){
+            System.out.println("创建成功1");
+        }
+
+        File file1 = new File("/Users/panguangwei/Desktop//io//io2");
+        boolean mkdirs = file1.mkdirs();    //没有目录直接创建
+        if (mkdirs){
+            System.out.println("创建成功2");
+        }
+
+    }
 }
