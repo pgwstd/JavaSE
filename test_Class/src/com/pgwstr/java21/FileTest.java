@@ -22,4 +22,14 @@ public class FileTest {
         System.out.println(file.lastModified());
 
     }
+    @Test
+    public void test2(){
+        File file = new File("hello.txt");
+        System.out.println(file.isDirectory());
+        System.out.println(file.isFile());
+        System.out.println(file.exists());
+        System.out.println(file.canRead());
+        System.out.println(file.canWrite());
+        System.out.println(file.isHidden());
+    }
 }
