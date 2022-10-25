@@ -3,6 +3,7 @@ package com.pgwstr.java21;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * @author pgwstr
@@ -31,5 +32,18 @@ public class FileTest {
         System.out.println(file.canRead());
         System.out.println(file.canWrite());
         System.out.println(file.isHidden());
+    }
+
+    @Test
+    public void test3() throws IOException {
+        File file = new File("hell0.txt");
+        if (!file.exists()){
+            file.createNewFile();
+            System.out.println("创建成功");
+        }
+        else {
+            file.delete();
+            System.out.println("删除成功");
+        }
     }
 }
