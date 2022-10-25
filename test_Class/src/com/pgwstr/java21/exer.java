@@ -29,4 +29,9 @@ public class exer {
         File file2 = new File("//Users//panguangwei//Desktop//io//io2");
         System.out.println(file2.delete());
     }
+
+    @Test
+    public void test2() throws IOException{
+
+    }
 }
