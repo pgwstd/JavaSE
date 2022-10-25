@@ -19,5 +19,14 @@ public class exer {
         if (newFile){
             System.out.println("创建成功");
         }
+
+        File file1 = new File("//Users//panguangwei//Desktop//io//io2");
+        boolean mkdirs = file1.mkdirs();
+        if (mkdirs){
+            System.out.println("创建成功");
+        }
+
+        File file2 = new File("//Users//panguangwei//Desktop//io//io2");
+        System.out.println(file2.delete());
     }
 }
