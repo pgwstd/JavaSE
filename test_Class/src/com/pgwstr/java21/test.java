@@ -2,10 +2,12 @@ package com.pgwstr.java21;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Set;
+
 public class test {
     @Test
     public void test1() {
-        //遍历value
-        System.out.println("test1");
+        System.out.println(123);
+
     }
 }
