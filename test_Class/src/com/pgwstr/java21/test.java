@@ -16,5 +16,10 @@ public class test {
     public void test2() {
        String srt = "Hello, World!";
          System.out.println(srt);
+
+    }
+    @Test
+    public void test3(){
+        System.out.println(.1+.2);
     }
 }
