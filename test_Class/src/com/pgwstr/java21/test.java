@@ -22,4 +22,8 @@ public class test {
     public void test3(){
         System.out.println(.1+.2);
     }
+    @Test
+    public void test4(){
+        System.out.println(1.0/0);
+    }
 }
