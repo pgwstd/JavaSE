@@ -26,4 +26,8 @@ public class test {
     public void test4(){
         System.out.println(1.0/0);
     }
+    @Test
+    public void test5(){
+        System.out.println(0.0/1);
+    }
 }
