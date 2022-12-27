@@ -6,8 +6,8 @@ package com.pgwstr.java22;
  */
 public class test {
     public static void main(String[] args) {
-        boolean isTrue = true;
         for (int i = 1;i <= 100;i++){
+            boolean isTrue = true;
             for (int j = 2;j < i;j++){
                 if (i % j == 0){
                     isTrue = false;
@@ -15,7 +15,7 @@ public class test {
                 }
             }
             System.out.println(isTrue ? i + "是素数" : i + "不是素数");
-            isTrue = true;
+
         }
     }
 }
