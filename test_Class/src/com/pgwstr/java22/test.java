@@ -13,8 +13,12 @@ public class test {
                     isTrue = false;
                     break;
                 }
+
             }
-            System.out.println(isTrue ? i + "是素数" : i + "不是素数");
+            if (isTrue){
+                System.out.println(i);
+            }
+//            System.out.println(isTrue ? i + "是素数" : i + "不是素数");
 
         }
     }
