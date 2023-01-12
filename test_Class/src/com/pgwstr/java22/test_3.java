@@ -6,9 +6,7 @@ package com.pgwstr.java22;
  */
 public class test_3 {
     public static void main(String[] args) {
-
         System.out.println(sum(12, 14));
-
     }
 
     //定义一个方法，让它可以接收两个int类型的参数，返回这两个参数的和
